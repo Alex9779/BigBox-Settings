@@ -7,6 +7,7 @@ T0 ; select extruder 0
 M104 S[extruder0_temperature] ; set extruder 0 temperature
 
 M117 Homing
+T0 ; select extruder 0
 G28
 
 ;M92 E290 ;adjust steps per mm

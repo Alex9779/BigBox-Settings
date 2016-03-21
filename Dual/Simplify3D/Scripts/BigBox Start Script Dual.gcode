@@ -9,6 +9,7 @@ T1 ; select extruder 1
 M104 S[extruder1_temperature] ; set extruder 1 temperature
 
 M117 Homing
+T0 ; select extruder 0
 G28
 
 M218 T1 X35 Y0 ; set extruder 1 offset
