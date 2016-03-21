@@ -7,7 +7,7 @@
   <extruder name="Extruder 0 (left)">
     <toolheadNumber>0</toolheadNumber>
     <diameter>0.4</diameter>
-	<autoWidth>1</autoWidth>
+    <autoWidth>1</autoWidth>
     <width>0.48</width>
     <extrusionMultiplier>1</extrusionMultiplier>
     <useRetract>1</useRetract>
