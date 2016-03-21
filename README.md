@@ -5,6 +5,7 @@ In this repository contains settings for the E3D BigBox 3D printer for use with 
 At the moment the is only one profile for Simplify3D configured in an early stage.
 
 **This is work in progress. Please review all settings thoroughly before starting a print!**
+
 **I am not responsible for failed prints or crashed machines!**
 
 ## Simplify3D - BigBiox Dual Profile
