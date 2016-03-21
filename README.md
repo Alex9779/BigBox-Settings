@@ -8,7 +8,7 @@ At the moment the is only one profile for Simplify3D configured in an early stag
 
 **I am not responsible for failed prints or crashed machines!**
 
-## Simplify3D - BigBiox Dual Profile
+## Simplify3D - BigBox Dual Profile
 This profile makes use of the auto configuration feature of Simplify3D offering you three drop down menus when editing a process.
 From these drop downs you can select your material, the quality and which extruder shall be used.
 The profile is designed to set the most important settings according to your selection.
