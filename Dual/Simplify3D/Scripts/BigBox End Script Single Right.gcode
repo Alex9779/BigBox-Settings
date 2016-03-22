@@ -5,12 +5,12 @@ G91 ; relative positioning
 G1 Z10 F360 ; move Z axis by 10mm
 G90 ; absolute positioning
 
-M117 Moving to dock
+;move to dock
 T0 ; select extruder 0
 G1 X70 Y200 F3000 ; move to position in front of dock
 G1 X70 Y240 F3000 ; move into dock
 
-M117 Purging extruder 1
+;purge extruder 0
 T1 ; select extruder 1
 G1 E25 F400 ; extrude 25mm
 G1 E-14  F4000 ; retract 14mm very fast

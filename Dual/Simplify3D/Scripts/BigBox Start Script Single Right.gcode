@@ -1,36 +1,37 @@
 ;BigBox Printer Start Script Begin
 ;relies on M83 (use relative extrusion distances)
 
-M117 Heating
+M117 Preparing
 M140 S[bed0_temperature] ; set bed temperature
 T1 ; select extruder 1
 M104 S[extruder1_temperature] ; set extruder 1 temperature
 
-M117 Homing
+;home
 T0 ; select extruder 0
 G28
 
+;set values
 M218 T1 X35 Y0 ; set extruder 1 offset
 ;M92 E290 ; adjust steps per mm
 
-M117 Moving to dock
+;move to dock
 T0 ; select extruder 0
 G1 X70 Y200 F3000 ; move to position in front of dock
 G1 X70 Y240 F3000 ; move into dock
 
-M117 Heating bed
+;heat bed
 M190 S[bed0_temperature] ; wait for bed temperature
 
-M117 Heating extruder 1
+;heat extruder 1
 T1 ; select extruder 1
 M109 S[extruder1_temperature] ; set extruder 1 temperature and wait
 
-M117 Priming extruder 1
+;prime extruder 0
 T1 ; select extruder 1
 G1 E15 F200 ; reverse end of print retraction
 G1 E10 F50 ; extrude 10mm
 
-M117 Moving out of dock
+;move out of dock
 T0 ; select extruder 0
 G1 X80 Y240 F3000 ; move to position in dock
 G1 X80 Y200 F3000 ; move out of dock
