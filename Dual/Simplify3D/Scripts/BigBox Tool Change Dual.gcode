@@ -6,7 +6,7 @@ T0
 G1 X70 Y200 F3000
 G1 X70 Y240 F3000
 
-;puuge old extruder
+;purge old extruder
 {IF OLDTOOL=0}T0
 {IF OLDTOOL=0}G1 E25 F400
 {IF OLDTOOL=0}G1 E-14  F4000
