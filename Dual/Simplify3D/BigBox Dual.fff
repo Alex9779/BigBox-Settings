@@ -59,7 +59,7 @@
   <raftInfill>90</raftInfill>
   <disableRaftBaseLayers>1</disableRaftBaseLayers>
   <useSkirt>1</useSkirt>
-  <skirtExtruder>0</skirtExtruder>
+  <skirtExtruder>999</skirtExtruder>
   <skirtLayers>1</skirtLayers>
   <skirtOutlines>3</skirtOutlines>
   <skirtOffset>1</skirtOffset>
