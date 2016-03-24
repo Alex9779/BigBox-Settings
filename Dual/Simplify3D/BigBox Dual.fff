@@ -61,8 +61,8 @@
   <useSkirt>1</useSkirt>
   <skirtExtruder>999</skirtExtruder>
   <skirtLayers>1</skirtLayers>
-  <skirtOutlines>3</skirtOutlines>
-  <skirtOffset>1</skirtOffset>
+  <skirtOutlines>2</skirtOutlines>
+  <skirtOffset>2</skirtOffset>
   <usePrimePillar>0</usePrimePillar>
   <primePillarExtruder>999</primePillarExtruder>
   <primePillarWidth>12</primePillarWidth>
