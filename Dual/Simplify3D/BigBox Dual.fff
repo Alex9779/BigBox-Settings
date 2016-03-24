@@ -210,8 +210,8 @@
   <onlyWipeOutlines>1</onlyWipeOutlines>
   <avoidCrossingOutline>1</avoidCrossingOutline>
   <maxMovementDetourFactor>3</maxMovementDetourFactor>
-  <toolChangeRetractionDistance>2</toolChangeRetractionDistance>
-  <toolChangeExtraRestartDistance>0.5</toolChangeExtraRestartDistance>
+  <toolChangeRetractionDistance>1.5</toolChangeRetractionDistance>
+  <toolChangeExtraRestartDistance>0</toolChangeExtraRestartDistance>
   <toolChangeRetractionSpeed>4200</toolChangeRetractionSpeed>
   <allowThinWallGapFill>1</allowThinWallGapFill>
   <thinWallAllowedOverlapPercentage>10</thinWallAllowedOverlapPercentage>
