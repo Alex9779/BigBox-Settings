@@ -694,7 +694,7 @@
   <autoConfigureExtruders name="Both Extruders" allowedToolheads="2">
     <primaryExtruder>0</primaryExtruder>
     <raftExtruder>0</raftExtruder>
-    <skirtExtruder>0</skirtExtruder>
+    <skirtExtruder>999</skirtExtruder>
     <infillExtruder>0</infillExtruder>
     <supportExtruder>1</supportExtruder>
     <useSkirt>1</useSkirt>
