@@ -32,6 +32,20 @@ The extruder selection:
  - applies the needed g-code script for starting a print, changing tools and ending a print
 
 ### Testing status
-I did prints with the left head only at the moment. The scripts for this work as intended and so should the others do because they are based on the previous.
+I did several prints with every extruder preset (left only, right only, dual) and all worked
+fine for me.
+I tweak the settings a bit especially for dual prints because I had problems with the first
+layer on the second extruder.
+This is related to the fact that a purge prime retraction sequence is run in the tool change
+script which S3D does not know about.
+So it might be important to fight under or over extrusions of an extruder after a tool change
+that the sum of the tool change retraction and extra restart distance matches the sum of the
+normal extruder retraction and extra restart distance settings and also matches the retraction
+done in the tool change script after the priming of the new extruder.
+All those values are somehow bound together that the tool change script really works.
+Be careful if you change those values and maybe check the gcode file closely that tool change points
+to be sure that want you want to achieve really happens.
+
 The material settings are generic, mostly covering manufacturer's recommendations.
+
 All other settings are copied from the alpha/beta profile provided by Greg Holloway or based on some own thoughts, print tests and experience.
