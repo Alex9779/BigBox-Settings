@@ -9,8 +9,10 @@ At the moment the is only one profile for Simplify3D configured in an early stag
 **I am not responsible for failed prints or crashed machines!**
 
 ## Simplify3D - BigBox Dual Profile
-This profile makes use of the auto configuration feature of Simplify3D offering you three drop down menus when editing a process.
-From these drop downs you can select your material, the quality and which extruder shall be used.
+This profile makes use of the auto configuration feature of Simplify3D offering you three
+drop down menus when editing a process.
+From these drop downs you can select your material, the quality and which extruder shall be
+used.
 
 The profile is designed to set the most important settings according to your selection.
 
@@ -43,9 +45,10 @@ that the sum of the tool change retraction and extra restart distance matches th
 normal extruder retraction and extra restart distance settings and also matches the retraction
 done in the tool change script after the priming of the new extruder.
 All those values are somehow bound together that the tool change script really works.
-Be careful if you change those values and maybe check the gcode file closely that tool change points
-to be sure that want you want to achieve really happens.
+Be careful if you change those values and maybe check the gcode file closely that tool change 
+points to be sure that want you want to achieve really happens.
 
 The material settings are generic, mostly covering manufacturer's recommendations.
 
-All other settings are copied from the alpha/beta profile provided by Greg Holloway or based on some own thoughts, print tests and experience.
+All other settings are copied from the alpha/beta profile provided by Greg Holloway or based
+on some own thoughts, print tests and experience.
