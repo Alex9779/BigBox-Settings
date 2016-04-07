@@ -7,8 +7,8 @@
   <extruder name="Extruder 0 (left)">
     <toolheadNumber>0</toolheadNumber>
     <diameter>0.4</diameter>
-    <autoWidth>1</autoWidth>
-    <width>0.48</width>
+    <autoWidth>0</autoWidth>
+    <width>0.40</width>
     <extrusionMultiplier>1</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>1.5</retractionDistance>
@@ -23,8 +23,8 @@
   <extruder name="Extruder 1 (right)">
     <toolheadNumber>1</toolheadNumber>
     <diameter>0.4</diameter>
-    <autoWidth>1</autoWidth>
-    <width>0.48</width>
+    <autoWidth>0</autoWidth>
+    <width>0.40</width>
     <extrusionMultiplier>1</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>1.5</retractionDistance>
@@ -220,8 +220,8 @@
     <extruder name="Extruder 0 (left)">
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
-      <autoWidth>1</autoWidth>
-      <width>0.48</width>
+      <autoWidth>0</autoWidth>
+      <width>0.40</width>
       <extrusionMultiplier>1</extrusionMultiplier>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
@@ -236,8 +236,8 @@
     <extruder name="Extruder 1 (right)">
       <toolheadNumber>1</toolheadNumber>
       <diameter>0.4</diameter>
-      <autoWidth>1</autoWidth>
-      <width>0.48</width>
+      <autoWidth>0</autoWidth>
+      <width>0.40</width>
       <extrusionMultiplier>1</extrusionMultiplier>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
@@ -281,9 +281,9 @@
     <extruder name="Extruder 0 (left)">
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
-      <autoWidth>1</autoWidth>
-      <width>0.48</width>
       <extrusionMultiplier>1</extrusionMultiplier>
+      <autoWidth>0</autoWidth>
+      <width>0.40</width>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
@@ -297,9 +297,9 @@
     <extruder name="Extruder 1 (right)">
       <toolheadNumber>1</toolheadNumber>
       <diameter>0.4</diameter>
-      <autoWidth>1</autoWidth>
-      <width>0.48</width>
       <extrusionMultiplier>1</extrusionMultiplier>
+      <autoWidth>0</autoWidth>
+      <width>0.40</width>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
@@ -352,9 +352,9 @@
     <extruder name="Extruder 0 (left)">
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
-      <autoWidth>1</autoWidth>
-      <width>0.48</width>
       <extrusionMultiplier>1</extrusionMultiplier>
+      <autoWidth>0</autoWidth>
+      <width>0.40</width>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
@@ -368,9 +368,9 @@
     <extruder name="Extruder 1 (right)">
       <toolheadNumber>1</toolheadNumber>
       <diameter>0.4</diameter>
-      <autoWidth>1</autoWidth>
-      <width>0.48</width>
       <extrusionMultiplier>1</extrusionMultiplier>
+      <autoWidth>0</autoWidth>
+      <width>0.40</width>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
@@ -423,9 +423,9 @@
     <extruder name="Extruder 0 (left)">
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
-      <autoWidth>1</autoWidth>
-      <width>0.48</width>
       <extrusionMultiplier>1</extrusionMultiplier>
+      <autoWidth>0</autoWidth>
+      <width>0.40</width>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
@@ -439,9 +439,9 @@
     <extruder name="Extruder 1 (right)">
       <toolheadNumber>1</toolheadNumber>
       <diameter>0.4</diameter>
-      <autoWidth>1</autoWidth>
-      <width>0.48</width>
       <extrusionMultiplier>1</extrusionMultiplier>
+      <autoWidth>0</autoWidth>
+      <width>0.40</width>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
@@ -490,9 +490,9 @@
     <extruder name="Extruder 0 (left)">
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
-      <autoWidth>1</autoWidth>
-      <width>0.48</width>
       <extrusionMultiplier>1</extrusionMultiplier>
+      <autoWidth>0</autoWidth>
+      <width>0.40</width>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
@@ -506,9 +506,9 @@
     <extruder name="Extruder 1 (right)">
       <toolheadNumber>1</toolheadNumber>
       <diameter>0.4</diameter>
-      <autoWidth>1</autoWidth>
-      <width>0.48</width>
       <extrusionMultiplier>1</extrusionMultiplier>
+      <autoWidth>0</autoWidth>
+      <width>0.40</width>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
@@ -561,9 +561,9 @@
     <extruder name="Extruder 0 (left)">
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
-      <autoWidth>1</autoWidth>
-      <width>0.48</width>
       <extrusionMultiplier>1</extrusionMultiplier>
+      <autoWidth>0</autoWidth>
+      <width>0.40</width>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
@@ -577,9 +577,9 @@
     <extruder name="Extruder 1 (right)">
       <toolheadNumber>1</toolheadNumber>
       <diameter>0.4</diameter>
-      <autoWidth>1</autoWidth>
-      <width>0.48</width>
       <extrusionMultiplier>1</extrusionMultiplier>
+      <autoWidth>0</autoWidth>
+      <width>0.40</width>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
