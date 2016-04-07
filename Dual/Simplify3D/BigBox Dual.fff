@@ -142,9 +142,9 @@
   <minCoolingSpeedSlowdown>20</minCoolingSpeedSlowdown>
   <increaseFanForCooling>0</increaseFanForCooling>
   <minFanLayerTime>45</minFanLayerTime>
-  <maxCoolingFanSpeed>100</maxCoolingFanSpeed>
+  <maxCoolingFanSpeed>80</maxCoolingFanSpeed>
   <increaseFanForBridging>1</increaseFanForBridging>
-  <bridgingFanSpeed>100</bridgingFanSpeed>
+  <bridgingFanSpeed>80</bridgingFanSpeed>
   <use5D>1</use5D>
   <relativeEdistances>1</relativeEdistances>
   <allowEaxisZeroing>1</allowEaxisZeroing>
