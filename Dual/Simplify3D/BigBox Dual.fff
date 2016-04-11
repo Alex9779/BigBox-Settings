@@ -258,7 +258,7 @@
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="240"/>
+      <setpoint layer="1" temperature="230"/>
     </temperatureController>
     <temperatureController name="Extruder 1 (right)">
       <temperatureNumber>1</temperatureNumber>
@@ -266,7 +266,7 @@
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="240"/>
+      <setpoint layer="1" temperature="230"/>
     </temperatureController>
     <temperatureController name="Heated Bed">
       <temperatureNumber>0</temperatureNumber>
