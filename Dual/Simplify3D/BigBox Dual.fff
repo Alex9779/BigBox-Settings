@@ -216,7 +216,7 @@
   <allowThinWallGapFill>1</allowThinWallGapFill>
   <thinWallAllowedOverlapPercentage>10</thinWallAllowedOverlapPercentage>
   <horizontalSizeCompensation>0</horizontalSizeCompensation>
-  <autoConfigureMaterial name="ABS">
+  <autoConfigureMaterial name="Innofil ABS">
     <extruder name="Extruder 0 (left)">
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
@@ -258,7 +258,7 @@
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="230"/>
+      <setpoint layer="1" temperature="260"/>
     </temperatureController>
     <temperatureController name="Extruder 1 (right)">
       <temperatureNumber>1</temperatureNumber>
@@ -266,7 +266,7 @@
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="230"/>
+      <setpoint layer="1" temperature="260"/>
     </temperatureController>
     <temperatureController name="Heated Bed">
       <temperatureNumber>0</temperatureNumber>
