@@ -348,7 +348,7 @@
       <setpoint layer="1" temperature="60"/>
     </temperatureController>
   </autoConfigureMaterial>
-  <autoConfigureMaterial name="PLA/PHA">
+  <autoConfigureMaterial name="Colorfabb PLA/PHA">
     <extruder name="Extruder 0 (left)">
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
@@ -419,7 +419,7 @@
       <setpoint layer="1" temperature="60"/>
     </temperatureController>
   </autoConfigureMaterial>
-  <autoConfigureMaterial name="XT">
+  <autoConfigureMaterial name="Colorfabb XT">
     <extruder name="Extruder 0 (left)">
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
@@ -486,7 +486,7 @@
       <setpoint layer="1" temperature="70"/>
     </temperatureController>
   </autoConfigureMaterial>
-  <autoConfigureMaterial name="PLA (left) Scaffold (right)">
+  <autoConfigureMaterial name="PLA (left) E3D Scaffold (right)">
     <extruder name="Extruder 0 (left)">
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
@@ -557,7 +557,7 @@
       <setpoint layer="1" temperature="60"/>
     </temperatureController>
   </autoConfigureMaterial>
-  <autoConfigureMaterial name="PLA/PHA (left) Scaffold (right)">
+  <autoConfigureMaterial name="Colorfabb PLA/PHA (left) E3D Scaffold (right)">
     <extruder name="Extruder 0 (left)">
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
@@ -628,7 +628,7 @@
       <setpoint layer="1" temperature="60"/>
     </temperatureController>
   </autoConfigureMaterial>
-  <autoConfigureMaterial name="XT (left) Scaffold (right)">
+  <autoConfigureMaterial name="Colorfabb XT (left) E3D Scaffold (right)">
     <extruder name="Extruder 0 (left)">
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
