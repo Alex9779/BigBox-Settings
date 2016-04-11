@@ -276,6 +276,10 @@
       <stabilizeAtStartup>1</stabilizeAtStartup>
       <setpoint layer="1" temperature="90"/>
     </temperatureController>
+	<onlyRetractWhenCrossingOutline>0</onlyRetractWhenCrossingOutline>
+    <retractBetweenLayers>1</retractBetweenLayers>
+	<avoidCrossingOutline>1</avoidCrossingOutline>
+    <maxMovementDetourFactor>1</maxMovementDetourFactor>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="PLA">
     <extruder name="Extruder 0 (left)">
@@ -347,6 +351,10 @@
       <stabilizeAtStartup>1</stabilizeAtStartup>
       <setpoint layer="1" temperature="60"/>
     </temperatureController>
+	<onlyRetractWhenCrossingOutline>1</onlyRetractWhenCrossingOutline>
+    <retractBetweenLayers>0</retractBetweenLayers>
+	<avoidCrossingOutline>1</avoidCrossingOutline>
+    <maxMovementDetourFactor>3</maxMovementDetourFactor>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="Colorfabb PLA/PHA">
     <extruder name="Extruder 0 (left)">
@@ -418,6 +426,10 @@
       <stabilizeAtStartup>1</stabilizeAtStartup>
       <setpoint layer="1" temperature="60"/>
     </temperatureController>
+	<onlyRetractWhenCrossingOutline>1</onlyRetractWhenCrossingOutline>
+    <retractBetweenLayers>0</retractBetweenLayers>
+	<avoidCrossingOutline>1</avoidCrossingOutline>
+    <maxMovementDetourFactor>3</maxMovementDetourFactor>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="Colorfabb XT">
     <extruder name="Extruder 0 (left)">
@@ -485,6 +497,10 @@
       <stabilizeAtStartup>1</stabilizeAtStartup>
       <setpoint layer="1" temperature="70"/>
     </temperatureController>
+	<onlyRetractWhenCrossingOutline>1</onlyRetractWhenCrossingOutline>
+    <retractBetweenLayers>1</retractBetweenLayers>
+	<avoidCrossingOutline>1</avoidCrossingOutline>
+    <maxMovementDetourFactor>3</maxMovementDetourFactor>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="PLA (left) E3D Scaffold (right)">
     <extruder name="Extruder 0 (left)">
@@ -556,6 +572,10 @@
       <stabilizeAtStartup>1</stabilizeAtStartup>
       <setpoint layer="1" temperature="60"/>
     </temperatureController>
+	<onlyRetractWhenCrossingOutline>1</onlyRetractWhenCrossingOutline>
+    <retractBetweenLayers>0</retractBetweenLayers>
+	<avoidCrossingOutline>1</avoidCrossingOutline>
+    <maxMovementDetourFactor>3</maxMovementDetourFactor>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="Colorfabb PLA/PHA (left) E3D Scaffold (right)">
     <extruder name="Extruder 0 (left)">
@@ -627,6 +647,10 @@
       <stabilizeAtStartup>1</stabilizeAtStartup>
       <setpoint layer="1" temperature="60"/>
     </temperatureController>
+	<onlyRetractWhenCrossingOutline>1</onlyRetractWhenCrossingOutline>
+    <retractBetweenLayers>0</retractBetweenLayers>
+	<avoidCrossingOutline>1</avoidCrossingOutline>
+    <maxMovementDetourFactor>3</maxMovementDetourFactor>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="Colorfabb XT (left) E3D Scaffold (right)">
     <extruder name="Extruder 0 (left)">
@@ -694,6 +718,10 @@
       <stabilizeAtStartup>1</stabilizeAtStartup>
       <setpoint layer="1" temperature="75"/>
     </temperatureController>
+	<onlyRetractWhenCrossingOutline>1</onlyRetractWhenCrossingOutline>
+    <retractBetweenLayers>1</retractBetweenLayers>
+	<avoidCrossingOutline>1</avoidCrossingOutline>
+    <maxMovementDetourFactor>3</maxMovementDetourFactor>
   </autoConfigureMaterial>
   <autoConfigureQuality name="Fast">
     <layerHeight>0.3</layerHeight>
