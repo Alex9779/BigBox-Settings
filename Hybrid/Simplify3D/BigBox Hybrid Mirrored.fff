@@ -355,12 +355,12 @@
     <maxMovementDetourFactor>3</maxMovementDetourFactor>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="Colorfabb HT">
-    <extruder name="Extruder 0 (right)">
+    <extruder name="Extruder 0 (left)">
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
       <autoWidth>1</autoWidth>
       <width>0.40</width>
-      <extrusionMultiplier>0.95</extrusionMultiplier>
+      <extrusionMultiplier>1.00</extrusionMultiplier>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
@@ -371,12 +371,12 @@
       <useWipe>0</useWipe>
       <wipeDistance>5</wipeDistance>
     </extruder>
-    <extruder name="Extruder 1 (left)">
+    <extruder name="Extruder 1 (right)">
       <toolheadNumber>1</toolheadNumber>
       <diameter>0.4</diameter>
       <autoWidth>1</autoWidth>
       <width>0.40</width>
-      <extrusionMultiplier>0.95</extrusionMultiplier>
+      <extrusionMultiplier>1.00</extrusionMultiplier>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
@@ -388,29 +388,23 @@
       <wipeDistance>5</wipeDistance>
     </extruder>
     <fanSpeed>
-      <setpoint layer="3" speed="10"/>
-      <setpoint layer="4" speed="15"/>
-      <setpoint layer="5" speed="20"/>
-      <setpoint layer="6" speed="25"/>
-      <setpoint layer="7" speed="30"/>
-      <setpoint layer="8" speed="35"/>
-      <setpoint layer="9" speed="40"/>
+      <setpoint layer="1" speed="0"/>
     </fanSpeed>
-    <temperatureController name="Extruder 0 (right)">
+    <temperatureController name="Extruder 0 (left)">
       <temperatureNumber>0</temperatureNumber>
       <isHeatedBed>0</isHeatedBed>
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="250"/>
+      <setpoint layer="1" temperature="260"/>
     </temperatureController>
-    <temperatureController name="Extruder 1 (left)">
+    <temperatureController name="Extruder 1 (right)">
       <temperatureNumber>1</temperatureNumber>
       <isHeatedBed>0</isHeatedBed>
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="250"/>
+      <setpoint layer="1" temperature="260"/>
     </temperatureController>
       <temperatureController name="Heated Bed">
       <temperatureNumber>0</temperatureNumber>
