@@ -916,11 +916,11 @@
     <strokeZoverride>300</strokeZoverride>
   </autoConfigureExtruders>
   <autoConfigureExtruders name="Both Extruders" allowedToolheads="2">
-    <primaryExtruder>0</primaryExtruder>
-    <raftExtruder>0</raftExtruder>
+    <primaryExtruder>1</primaryExtruder>
+    <raftExtruder>1</raftExtruder>
     <skirtExtruder>999</skirtExtruder>
-    <infillExtruder>0</infillExtruder>
-    <supportExtruder>1</supportExtruder>
+    <infillExtruder>1</infillExtruder>
+    <supportExtruder>0</supportExtruder>
     <useSkirt>1</useSkirt>
     <usePrimePillar>0</usePrimePillar>
     <useOozeShield>0</useOozeShield>
