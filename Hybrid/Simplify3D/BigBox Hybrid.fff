@@ -634,7 +634,7 @@
 	<avoidCrossingOutline>1</avoidCrossingOutline>
     <maxMovementDetourFactor>3</maxMovementDetourFactor>
   </autoConfigureMaterial>
-  <autoConfigureMaterial name="PLA (left) E3D Scaffold (right)">
+  <autoConfigureMaterial name="PLA (right) E3D Scaffold (left)">
     <extruder name="Extruder 0 (left)">
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
@@ -707,7 +707,7 @@
 	<avoidCrossingOutline>1</avoidCrossingOutline>
     <maxMovementDetourFactor>3</maxMovementDetourFactor>
   </autoConfigureMaterial>
-  <autoConfigureMaterial name="Colorfabb PLA/PHA (left) E3D Scaffold (right)">
+  <autoConfigureMaterial name="Colorfabb PLA/PHA (right) E3D Scaffold (left)">
     <extruder name="Extruder 0 (left)">
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
@@ -780,7 +780,7 @@
 	<avoidCrossingOutline>1</avoidCrossingOutline>
     <maxMovementDetourFactor>3</maxMovementDetourFactor>
   </autoConfigureMaterial>
-  <autoConfigureMaterial name="Colorfabb XT (left) E3D Scaffold (right)">
+  <autoConfigureMaterial name="Colorfabb XT (right) E3D Scaffold (left)">
     <extruder name="Extruder 0 (left)">
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
