@@ -636,7 +636,7 @@
   </autoConfigureMaterial>
   <autoConfigureMaterial name="PLA (right) E3D Scaffold (left)">
     <extruder name="Extruder 0 (left)">
-      <toolheadNumber>0</toolheadNumber>
+      <toolheadNumber>1</toolheadNumber>
       <diameter>0.4</diameter>
       <autoWidth>1</autoWidth>
       <width>0.40</width>
@@ -652,7 +652,7 @@
       <wipeDistance>5</wipeDistance>
     </extruder>
     <extruder name="Extruder 1 (right)">
-      <toolheadNumber>1</toolheadNumber>
+      <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
       <autoWidth>1</autoWidth>
       <width>0.40</width>
@@ -679,7 +679,7 @@
       <setpoint layer="10" speed="100"/>
     </fanSpeed>
     <temperatureController name="Extruder 0 (left)">
-      <temperatureNumber>0</temperatureNumber>
+      <temperatureNumber>1</temperatureNumber>
       <isHeatedBed>0</isHeatedBed>
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
@@ -687,7 +687,7 @@
       <setpoint layer="1" temperature="210"/>
     </temperatureController>
     <temperatureController name="Extruder 1 (right)">
-      <temperatureNumber>1</temperatureNumber>
+      <temperatureNumber>0</temperatureNumber>
       <isHeatedBed>0</isHeatedBed>
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
@@ -709,11 +709,11 @@
   </autoConfigureMaterial>
   <autoConfigureMaterial name="Colorfabb PLA/PHA (right) E3D Scaffold (left)">
     <extruder name="Extruder 0 (left)">
-      <toolheadNumber>0</toolheadNumber>
+      <toolheadNumber>1</toolheadNumber>
       <diameter>0.4</diameter>
       <autoWidth>1</autoWidth>
       <width>0.40</width>
-      <extrusionMultiplier>0.90</extrusionMultiplier>
+      <extrusionMultiplier>0.93</extrusionMultiplier>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
@@ -725,11 +725,11 @@
       <wipeDistance>5</wipeDistance>
     </extruder>
     <extruder name="Extruder 1 (right)">
-      <toolheadNumber>1</toolheadNumber>
+      <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
       <autoWidth>1</autoWidth>
       <width>0.40</width>
-      <extrusionMultiplier>0.93</extrusionMultiplier>
+      <extrusionMultiplier>0.90</extrusionMultiplier>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
@@ -752,7 +752,7 @@
       <setpoint layer="10" speed="100"/>
     </fanSpeed>
     <temperatureController name="Extruder 0 (left)">
-      <temperatureNumber>0</temperatureNumber>
+      <temperatureNumber>1</temperatureNumber>
       <isHeatedBed>0</isHeatedBed>
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
@@ -760,7 +760,7 @@
       <setpoint layer="1" temperature="190"/>
     </temperatureController>
     <temperatureController name="Extruder 1 (right)">
-      <temperatureNumber>1</temperatureNumber>
+      <temperatureNumber>0</temperatureNumber>
       <isHeatedBed>0</isHeatedBed>
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
@@ -782,11 +782,11 @@
   </autoConfigureMaterial>
   <autoConfigureMaterial name="Colorfabb XT (right) E3D Scaffold (left)">
     <extruder name="Extruder 0 (left)">
-      <toolheadNumber>0</toolheadNumber>
+      <toolheadNumber>1</toolheadNumber>
       <diameter>0.4</diameter>
       <autoWidth>1</autoWidth>
       <width>0.40</width>
-      <extrusionMultiplier>0.95</extrusionMultiplier>
+      <extrusionMultiplier>0.90</extrusionMultiplier>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
@@ -798,11 +798,11 @@
       <wipeDistance>5</wipeDistance>
     </extruder>
     <extruder name="Extruder 1 (right)">
-      <toolheadNumber>1</toolheadNumber>
+      <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
       <autoWidth>1</autoWidth>
       <width>0.40</width>
-      <extrusionMultiplier>0.90</extrusionMultiplier>
+      <extrusionMultiplier>0.95</extrusionMultiplier>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
       <extraRestartDistance>0</extraRestartDistance>
@@ -823,20 +823,20 @@
       <setpoint layer="9" speed="40"/>
     </fanSpeed>
     <temperatureController name="Extruder 0 (left)">
-      <temperatureNumber>0</temperatureNumber>
-      <isHeatedBed>0</isHeatedBed>
-      <relayBetweenLayers>0</relayBetweenLayers>
-      <relayBetweenLoops>0</relayBetweenLoops>
-      <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="245"/>
-    </temperatureController>
-    <temperatureController name="Extruder 1 (right)">
       <temperatureNumber>1</temperatureNumber>
       <isHeatedBed>0</isHeatedBed>
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>1</stabilizeAtStartup>
       <setpoint layer="1" temperature="210"/>
+    </temperatureController>
+    <temperatureController name="Extruder 1 (right)">
+      <temperatureNumber>0</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <relayBetweenLayers>0</relayBetweenLayers>
+      <relayBetweenLoops>0</relayBetweenLoops>
+      <stabilizeAtStartup>1</stabilizeAtStartup>
+      <setpoint layer="1" temperature="245"/>
     </temperatureController>
     <temperatureController name="Heated Bed">
       <temperatureNumber>0</temperatureNumber>
