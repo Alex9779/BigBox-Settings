@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="BigBox Hybrid Mirrored" version="2016-05-09 00:35:04" app="S3D-Software 3.0.2">
+<profile name="BigBox Hybrid Mirrored" version="2016-05-18 12:19:36" app="S3D-Software 3.0.2">
   <baseProfile>Generic Dual Extrusion Profile</baseProfile>
   <printMaterial>PLA</printMaterial>
   <printQuality>Medium</printQuality>
@@ -8,7 +8,7 @@
     <toolheadNumber>0</toolheadNumber>
     <diameter>0.4</diameter>
     <autoWidth>1</autoWidth>
-    <width>0.4</width>
+    <width>0.48</width>
     <extrusionMultiplier>0.9</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>1.5</retractionDistance>
@@ -24,7 +24,7 @@
     <toolheadNumber>1</toolheadNumber>
     <diameter>0.4</diameter>
     <autoWidth>1</autoWidth>
-    <width>0.4</width>
+    <width>0.48</width>
     <extrusionMultiplier>0.9</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>1.5</retractionDistance>
@@ -42,13 +42,13 @@
   <bottomSolidLayers>3</bottomSolidLayers>
   <perimeterOutlines>2</perimeterOutlines>
   <printPerimetersInsideOut>1</printPerimetersInsideOut>
-  <startPointOption>3</startPointOption>
+  <startPointOption>2</startPointOption>
   <startPointOriginX>0</startPointOriginX>
   <startPointOriginY>0</startPointOriginY>
   <startPointOriginZ>0</startPointOriginZ>
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
-  <firstLayerHeightPercentage>50</firstLayerHeightPercentage>
+  <firstLayerHeightPercentage>100</firstLayerHeightPercentage>
   <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
   <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   <useRaft>0</useRaft>
@@ -79,7 +79,7 @@
   <internalInfillPattern>Rectilinear</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
   <infillPercentage>20</infillPercentage>
-  <outlineOverlapPercentage>30</outlineOverlapPercentage>
+  <outlineOverlapPercentage>33</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>100</infillExtrusionWidthPercentage>
   <minInfillLength>5</minInfillLength>
   <infillLayerInterval>1</infillLayerInterval>
@@ -289,7 +289,7 @@
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
       <autoWidth>1</autoWidth>
-      <width>0.4</width>
+      <width>0.48</width>
       <extrusionMultiplier>0.9</extrusionMultiplier>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
@@ -305,7 +305,7 @@
       <toolheadNumber>1</toolheadNumber>
       <diameter>0.4</diameter>
       <autoWidth>1</autoWidth>
-      <width>0.4</width>
+      <width>0.48</width>
       <extrusionMultiplier>0.9</extrusionMultiplier>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
@@ -861,7 +861,7 @@
     <skirtLayers>1</skirtLayers>
     <infillPercentage>15</infillPercentage>
     <supportInfillPercentage>25</supportInfillPercentage>
-    <firstLayerHeightPercentage>33</firstLayerHeightPercentage>
+    <firstLayerHeightPercentage>50</firstLayerHeightPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="Medium">
     <layerHeight>0.2</layerHeight>
@@ -870,7 +870,7 @@
     <skirtLayers>1</skirtLayers>
     <infillPercentage>20</infillPercentage>
     <supportInfillPercentage>35</supportInfillPercentage>
-    <firstLayerHeightPercentage>50</firstLayerHeightPercentage>
+    <firstLayerHeightPercentage>100</firstLayerHeightPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="High">
     <layerHeight>0.1</layerHeight>
@@ -879,7 +879,7 @@
     <skirtLayers>1</skirtLayers>
     <infillPercentage>30</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
-    <firstLayerHeightPercentage>100</firstLayerHeightPercentage>
+    <firstLayerHeightPercentage>150</firstLayerHeightPercentage>
   </autoConfigureQuality>
   <autoConfigureExtruders name="Extruder 0 (right) only" allowedToolheads="1">
     <primaryExtruder>0</primaryExtruder>

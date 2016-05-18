@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
-<profile name="BigBox Hybrid" version="2016-05-09 00:35:33" app="S3D-Software 3.0.2">
+<profile name="BigBox Hybrid" version="2016-05-18 12:19:39" app="S3D-Software 3.0.2">
   <baseProfile>Generic Dual Extrusion Profile</baseProfile>
-  <printMaterial>Colorfabb XT (right) E3D Scaffold (left)</printMaterial>
+  <printMaterial>PLA</printMaterial>
   <printQuality>Medium</printQuality>
   <printExtruders>Extruder 1 (right) only</printExtruders>
   <extruder name="Extruder 0 (left)">
-    <toolheadNumber>1</toolheadNumber>
+    <toolheadNumber>0</toolheadNumber>
     <diameter>0.4</diameter>
     <autoWidth>1</autoWidth>
-    <width>0.4</width>
+    <width>0.48</width>
     <extrusionMultiplier>0.9</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>1.5</retractionDistance>
@@ -21,11 +21,11 @@
     <wipeDistance>5</wipeDistance>
   </extruder>
   <extruder name="Extruder 1 (right)">
-    <toolheadNumber>0</toolheadNumber>
+    <toolheadNumber>1</toolheadNumber>
     <diameter>0.4</diameter>
     <autoWidth>1</autoWidth>
-    <width>0.4</width>
-    <extrusionMultiplier>0.95</extrusionMultiplier>
+    <width>0.48</width>
+    <extrusionMultiplier>0.9</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>1.5</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
@@ -42,13 +42,13 @@
   <bottomSolidLayers>3</bottomSolidLayers>
   <perimeterOutlines>2</perimeterOutlines>
   <printPerimetersInsideOut>1</printPerimetersInsideOut>
-  <startPointOption>3</startPointOption>
+  <startPointOption>2</startPointOption>
   <startPointOriginX>0</startPointOriginX>
   <startPointOriginY>0</startPointOriginY>
   <startPointOriginZ>0</startPointOriginZ>
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
-  <firstLayerHeightPercentage>50</firstLayerHeightPercentage>
+  <firstLayerHeightPercentage>100</firstLayerHeightPercentage>
   <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
   <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   <useRaft>0</useRaft>
@@ -61,8 +61,8 @@
   <useSkirt>1</useSkirt>
   <skirtExtruder>1</skirtExtruder>
   <skirtLayers>1</skirtLayers>
-  <skirtOutlines>2</skirtOutlines>
-  <skirtOffset>2</skirtOffset>
+  <skirtOutlines>1</skirtOutlines>
+  <skirtOffset>4</skirtOffset>
   <usePrimePillar>0</usePrimePillar>
   <primePillarExtruder>999</primePillarExtruder>
   <primePillarWidth>12</primePillarWidth>
@@ -79,7 +79,7 @@
   <internalInfillPattern>Rectilinear</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
   <infillPercentage>20</infillPercentage>
-  <outlineOverlapPercentage>30</outlineOverlapPercentage>
+  <outlineOverlapPercentage>33</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>100</infillExtrusionWidthPercentage>
   <minInfillLength>5</minInfillLength>
   <infillLayerInterval>1</infillLayerInterval>
@@ -100,7 +100,7 @@
   <maxOverhangAngle>50</maxOverhangAngle>
   <supportAngles>45,-45</supportAngles>
   <temperatureController name="Extruder 0 (left)">
-    <temperatureNumber>1</temperatureNumber>
+    <temperatureNumber>0</temperatureNumber>
     <isHeatedBed>0</isHeatedBed>
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
@@ -108,12 +108,12 @@
     <setpoint layer="1" temperature="0"/>
   </temperatureController>
   <temperatureController name="Extruder 1 (right)">
-    <temperatureNumber>0</temperatureNumber>
+    <temperatureNumber>1</temperatureNumber>
     <isHeatedBed>0</isHeatedBed>
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="245"/>
+    <setpoint layer="1" temperature="210"/>
   </temperatureController>
   <temperatureController name="Heated Bed">
     <temperatureNumber>0</temperatureNumber>
@@ -121,16 +121,18 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="75"/>
+    <setpoint layer="1" temperature="60"/>
   </temperatureController>
   <fanSpeed>
-    <setpoint layer="3" speed="10"/>
-    <setpoint layer="4" speed="15"/>
-    <setpoint layer="5" speed="20"/>
-    <setpoint layer="6" speed="25"/>
-    <setpoint layer="7" speed="30"/>
-    <setpoint layer="8" speed="35"/>
-    <setpoint layer="9" speed="40"/>
+    <setpoint layer="2" speed="20"/>
+    <setpoint layer="3" speed="30"/>
+    <setpoint layer="4" speed="40"/>
+    <setpoint layer="5" speed="50"/>
+    <setpoint layer="6" speed="60"/>
+    <setpoint layer="7" speed="70"/>
+    <setpoint layer="8" speed="80"/>
+    <setpoint layer="9" speed="90"/>
+    <setpoint layer="10" speed="100"/>
   </fanSpeed>
   <blipFanToFullPower>0</blipFanToFullPower>
   <adjustSpeedForCooling>1</adjustSpeedForCooling>
@@ -204,7 +206,7 @@
   <robustSlicing>1</robustSlicing>
   <mergeAllIntoSolid>0</mergeAllIntoSolid>
   <onlyRetractWhenCrossingOutline>1</onlyRetractWhenCrossingOutline>
-  <retractBetweenLayers>1</retractBetweenLayers>
+  <retractBetweenLayers>0</retractBetweenLayers>
   <useRetractionMinTravel>0</useRetractionMinTravel>
   <retractionMinTravel>3</retractionMinTravel>
   <retractWhileWiping>0</retractWhileWiping>
@@ -287,7 +289,7 @@
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
       <autoWidth>1</autoWidth>
-      <width>0.4</width>
+      <width>0.48</width>
       <extrusionMultiplier>0.9</extrusionMultiplier>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
@@ -303,7 +305,7 @@
       <toolheadNumber>1</toolheadNumber>
       <diameter>0.4</diameter>
       <autoWidth>1</autoWidth>
-      <width>0.4</width>
+      <width>0.48</width>
       <extrusionMultiplier>0.9</extrusionMultiplier>
       <useRetract>1</useRetract>
       <retractionDistance>1.5</retractionDistance>
@@ -859,7 +861,7 @@
     <skirtLayers>1</skirtLayers>
     <infillPercentage>15</infillPercentage>
     <supportInfillPercentage>25</supportInfillPercentage>
-    <firstLayerHeightPercentage>33</firstLayerHeightPercentage>
+    <firstLayerHeightPercentage>50</firstLayerHeightPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="Medium">
     <layerHeight>0.2</layerHeight>
@@ -868,7 +870,7 @@
     <skirtLayers>1</skirtLayers>
     <infillPercentage>20</infillPercentage>
     <supportInfillPercentage>35</supportInfillPercentage>
-    <firstLayerHeightPercentage>50</firstLayerHeightPercentage>
+    <firstLayerHeightPercentage>100</firstLayerHeightPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="High">
     <layerHeight>0.1</layerHeight>
@@ -877,7 +879,7 @@
     <skirtLayers>1</skirtLayers>
     <infillPercentage>30</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
-    <firstLayerHeightPercentage>100</firstLayerHeightPercentage>
+    <firstLayerHeightPercentage>150</firstLayerHeightPercentage>
   </autoConfigureQuality>
   <autoConfigureExtruders name="Extruder 0 (left) only" allowedToolheads="1">
     <primaryExtruder>0</primaryExtruder>
