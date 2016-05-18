@@ -18,6 +18,7 @@ M218 T1 X38 Y0 ; set extruder 1 offset
 
 ;move to dock
 T0 ; select extruder 0
+G1 Z4 F3000 ; lift the head
 G1 X70 Y200 F3000 ; move to position in front of dock
 G1 X70 Y240 F3000 ; move into dock
 
