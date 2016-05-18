@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="BigBox Hybrid Mirrored" version="2016-05-18 12:19:36" app="S3D-Software 3.0.2">
+<profile name="BigBox Hybrid Mirrored" version="2016-05-18 14:29:13" app="S3D-Software 3.0.2">
   <baseProfile>Generic Dual Extrusion Profile</baseProfile>
   <printMaterial>PLA</printMaterial>
   <printQuality>Medium</printQuality>
@@ -61,8 +61,8 @@
   <useSkirt>1</useSkirt>
   <skirtExtruder>0</skirtExtruder>
   <skirtLayers>1</skirtLayers>
-  <skirtOutlines>2</skirtOutlines>
-  <skirtOffset>2</skirtOffset>
+  <skirtOutlines>1</skirtOutlines>
+  <skirtOffset>4</skirtOffset>
   <usePrimePillar>0</usePrimePillar>
   <primePillarExtruder>999</primePillarExtruder>
   <primePillarWidth>12</primePillarWidth>
