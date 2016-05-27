@@ -49,7 +49,7 @@
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
   <firstLayerHeightPercentage>90</firstLayerHeightPercentage>
-  <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+  <firstLayerWidthPercentage>130</firstLayerWidthPercentage>
   <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>1</raftExtruder>
@@ -250,7 +250,7 @@
       <useWipe>0</useWipe>
       <wipeDistance>5</wipeDistance>
     </extruder>	
-	<firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+	<firstLayerWidthPercentage>130</firstLayerWidthPercentage>
 	<firstLayerUnderspeed>0.5</firstLayerUnderspeed>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
@@ -324,7 +324,7 @@
       <useWipe>0</useWipe>
       <wipeDistance>5</wipeDistance>
     </extruder>
-    <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+    <firstLayerWidthPercentage>130</firstLayerWidthPercentage>
     <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
     <fanSpeed>
       <setpoint layer="2" speed="20"/>
@@ -404,7 +404,7 @@
       <useWipe>0</useWipe>
       <wipeDistance>5</wipeDistance>
     </extruder>
-	<firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+	<firstLayerWidthPercentage>130</firstLayerWidthPercentage>
 	<firstLayerUnderspeed>0.5</firstLayerUnderspeed>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
@@ -554,7 +554,7 @@
       <useWipe>0</useWipe>
       <wipeDistance>5</wipeDistance>
     </extruder>
-	<firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+	<firstLayerWidthPercentage>130</firstLayerWidthPercentage>
 	<firstLayerUnderspeed>0.5</firstLayerUnderspeed>
     <fanSpeed>
       <setpoint layer="2" speed="20"/>
@@ -634,7 +634,7 @@
       <useWipe>0</useWipe>
       <wipeDistance>5</wipeDistance>
     </extruder>
-	<firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+	<firstLayerWidthPercentage>130</firstLayerWidthPercentage>
 	<firstLayerUnderspeed>0.5</firstLayerUnderspeed>
     <fanSpeed>
       <setpoint layer="3" speed="10"/>
@@ -712,7 +712,7 @@
       <useWipe>0</useWipe>
       <wipeDistance>5</wipeDistance>
     </extruder>
-	<firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+	<firstLayerWidthPercentage>130</firstLayerWidthPercentage>
 	<firstLayerUnderspeed>0.5</firstLayerUnderspeed>
     <fanSpeed>
       <setpoint layer="2" speed="20"/>
@@ -792,7 +792,7 @@
       <useWipe>0</useWipe>
       <wipeDistance>5</wipeDistance>
     </extruder>
-	<firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+	<firstLayerWidthPercentage>130</firstLayerWidthPercentage>
 	<firstLayerUnderspeed>0.5</firstLayerUnderspeed>
     <fanSpeed>
       <setpoint layer="2" speed="20"/>
@@ -872,7 +872,7 @@
       <useWipe>0</useWipe>
       <wipeDistance>5</wipeDistance>
     </extruder>
-	<firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+	<firstLayerWidthPercentage>130</firstLayerWidthPercentage>
 	<firstLayerUnderspeed>0.5</firstLayerUnderspeed>
     <fanSpeed>
       <setpoint layer="3" speed="10"/>
