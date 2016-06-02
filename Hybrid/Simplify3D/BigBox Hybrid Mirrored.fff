@@ -724,7 +724,7 @@
 	<filamentDiameter>1.75</filamentDiameter>
 	<filamentPricePerKg>15</filamentPricePerKg>
 	<filamentDensity>1.25</filamentDensity>
-	<onlyRetractWhenCrossingOutline>1</onlyRetractWhenCrossingOutline>
+	<onlyRetractWhenCrossingOutline>0</onlyRetractWhenCrossingOutline>
     <retractBetweenLayers>1</retractBetweenLayers>
 	<avoidCrossingOutline>1</avoidCrossingOutline>
     <maxMovementDetourFactor>3</maxMovementDetourFactor>
@@ -986,7 +986,7 @@
 	<filamentDiameter>1.75</filamentDiameter>
 	<filamentPricePerKg>15</filamentPricePerKg>
 	<filamentDensity>1.25</filamentDensity>
-	<onlyRetractWhenCrossingOutline>1</onlyRetractWhenCrossingOutline>
+	<onlyRetractWhenCrossingOutline>0</onlyRetractWhenCrossingOutline>
     <retractBetweenLayers>1</retractBetweenLayers>
 	<avoidCrossingOutline>1</avoidCrossingOutline>
     <maxMovementDetourFactor>3</maxMovementDetourFactor>
