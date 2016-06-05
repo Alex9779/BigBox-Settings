@@ -7,15 +7,15 @@ T1 ; select extruder 1
 M104 S[extruder1_temperature] ; set extruder 1 temperature
 
 ;home
-T1 ; select extruder 1
+T0 ; select extruder 0
 G28
 
 ;set values
-M218 T0 X-38 Y0 ; set extruder 1 offset
+M218 T1 X38 Y0 ; set extruder 1 offset
 ;M92 E417.5 ; adjust steps per mm
 
 ;move to dock
-T1 ; select extruder 1
+T0 ; select extruder 0
 G1 Z4 F3000 ; lift the head
 G1 X70 Y200 F3000 ; move to position in front of dock
 G1 X70 Y240 F3000 ; move into dock
@@ -33,7 +33,7 @@ G1 E15 F200 ; reverse end of print retraction
 G1 E10 F50 ; extrude 10mm
 
 ;move out of dock
-T1 ; select extruder 1
+T0 ; select extruder 0
 G1 X80 Y240 F3000 ; move to position in dock
 G1 X80 Y200 F3000 ; move out of dock
 

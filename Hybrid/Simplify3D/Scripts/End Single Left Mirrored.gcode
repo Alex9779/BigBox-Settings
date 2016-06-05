@@ -6,7 +6,7 @@ G1 Z10 F360 ; move Z axis by 10mm
 G90 ; absolute positioning
 
 ;move to dock
-T1 ; select extruder 1
+T0 ; select extruder 0
 G1 X100 Y200 F3000 ; move to position in front of dock
 G1 X100 Y240 F3000 ; move into dock
 
