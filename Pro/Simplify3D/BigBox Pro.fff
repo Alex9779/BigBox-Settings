@@ -130,7 +130,7 @@
   <gcodeZoffset>0</gcodeZoffset>
   <overrideMachineDefinition>1</overrideMachineDefinition>
   <machineTypeOverride>0</machineTypeOverride>
-  <strokeXoverride>260</strokeXoverride>
+  <strokeXoverride>300</strokeXoverride>
   <strokeYoverride>200</strokeYoverride>
   <strokeZoverride>300</strokeZoverride>
   <originOffsetXoverride>0</originOffsetXoverride>
