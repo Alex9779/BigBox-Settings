@@ -730,7 +730,7 @@
     <maxMovementDetourFactor>3</maxMovementDetourFactor>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="spoolWorks Edge">
-    <extruder name="Extruder 0 (left)">
+    <extruder name="Extruder 0 (right)">
       <toolheadNumber>0</toolheadNumber>
       <autoWidth>1</autoWidth>
       <width>0.48</width>
@@ -745,7 +745,7 @@
       <useWipe>0</useWipe>
       <wipeDistance>5</wipeDistance>
     </extruder>
-    <extruder name="Extruder 1 (right)">
+    <extruder name="Extruder 1 (left)">
       <toolheadNumber>1</toolheadNumber>
       <autoWidth>1</autoWidth>
       <width>0.48</width>
@@ -769,7 +769,7 @@
       <setpoint layer="6" speed="25"/>
       <setpoint layer="7" speed="30"/>
     </fanSpeed>
-    <temperatureController name="Extruder 0 (left)">
+    <temperatureController name="Extruder 0 (right)">
       <temperatureNumber>0</temperatureNumber>
       <isHeatedBed>0</isHeatedBed>
       <relayBetweenLayers>0</relayBetweenLayers>
@@ -777,7 +777,7 @@
       <stabilizeAtStartup>1</stabilizeAtStartup>
       <setpoint layer="1" temperature="240"/>
     </temperatureController>
-    <temperatureController name="Extruder 1 (right)">
+    <temperatureController name="Extruder 1 (left)">
       <temperatureNumber>1</temperatureNumber>
       <isHeatedBed>0</isHeatedBed>
       <relayBetweenLayers>0</relayBetweenLayers>
@@ -1068,7 +1068,7 @@
     <maxMovementDetourFactor>3</maxMovementDetourFactor>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="spoolWorks Edge (right) E3D Scaffold (left)">
-    <extruder name="Extruder 0 (left)">
+    <extruder name="Extruder 0 (right)">
       <toolheadNumber>0</toolheadNumber>
       <autoWidth>1</autoWidth>
       <width>0.48</width>
@@ -1083,7 +1083,7 @@
       <useWipe>0</useWipe>
       <wipeDistance>5</wipeDistance>
     </extruder>
-    <extruder name="Extruder 1 (right)">
+    <extruder name="Extruder 1 (left)">
       <toolheadNumber>1</toolheadNumber>
       <autoWidth>1</autoWidth>
       <width>0.48</width>
@@ -1107,21 +1107,21 @@
       <setpoint layer="6" speed="25"/>
       <setpoint layer="7" speed="30"/>
     </fanSpeed>
-    <temperatureController name="Extruder 0 (left)">
+    <temperatureController name="Extruder 0 (right)">
       <temperatureNumber>0</temperatureNumber>
       <isHeatedBed>0</isHeatedBed>
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="200"/>
+      <setpoint layer="1" temperature="240"/>
     </temperatureController>
-    <temperatureController name="Extruder 1 (right)">
+    <temperatureController name="Extruder 1 (left)">
       <temperatureNumber>1</temperatureNumber>
       <isHeatedBed>0</isHeatedBed>
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="240"/>
+      <setpoint layer="1" temperature="200"/>
     </temperatureController>
     <temperatureController name="Heated Bed">
       <temperatureNumber>0</temperatureNumber>
