@@ -6,8 +6,8 @@ G1 Z10 F360 ; move Z axis by 10mm
 G90 ; absolute positioning
 
 ;move to dock
-G1 X70 Y200 F3000 ; move to position in front of dock
-G1 X70 Y240 F3000 ; move into dock
+G1 X95 Y200 F3000 ; move to position in front of dock
+G1 X95 Y240 F3000 ; move into dock
 
 ;purge extruder
 G1 E25 F400 ; extrude 25mm

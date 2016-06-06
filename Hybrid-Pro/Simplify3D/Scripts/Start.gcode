@@ -13,8 +13,8 @@ G28
 
 ;move to dock
 G1 Z4 F3000 ; lift the head
-G1 X70 Y200 F3000 ; move to position in front of dock
-G1 X70 Y240 F3000 ; move into dock
+G1 X95 Y200 F3000 ; move to position in front of dock
+G1 X95 Y240 F3000 ; move into dock
 
 ;heat bed
 M190 S[bed0_temperature] ; wait for bed temperature
@@ -27,8 +27,8 @@ G1 E15 F200 ; reverse end of print retraction
 G1 E10 F50 ; extrude 10mm
 
 ;move out of dock
-G1 X80 Y240 F3000 ; move to position in dock
-G1 X80 Y200 F3000 ; move out of dock
+G1 X105 Y240 F3000 ; move to position in dock
+G1 X105 Y200 F3000 ; move out of dock
 
 M117 Print starting
 
