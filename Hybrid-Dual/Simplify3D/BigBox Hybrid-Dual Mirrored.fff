@@ -1233,7 +1233,7 @@
     <bottomSolidLayers>4</bottomSolidLayers>
     <infillPercentage>30</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
-    <firstLayerHeightPercentage>180</firstLayerHeightPercentage>
+    <firstLayerHeightPercentage>90</firstLayerHeightPercentage>
 	<defaultSpeed>3000</defaultSpeed>
 	<outlineUnderspeed>0.5</outlineUnderspeed>
 	<solidInfillUnderspeed>0.5</solidInfillUnderspeed>
@@ -1247,7 +1247,7 @@
     <bottomSolidLayers>4</bottomSolidLayers>
     <infillPercentage>30</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
-    <firstLayerHeightPercentage>180</firstLayerHeightPercentage>
+    <firstLayerHeightPercentage>90</firstLayerHeightPercentage>
 	<defaultSpeed>2400</defaultSpeed>
 	<outlineUnderspeed>0.5</outlineUnderspeed>
 	<solidInfillUnderspeed>0.5</solidInfillUnderspeed>
@@ -1261,7 +1261,7 @@
     <bottomSolidLayers>4</bottomSolidLayers>
     <infillPercentage>30</infillPercentage>
     <supportInfillPercentage>40</supportInfillPercentage>
-    <firstLayerHeightPercentage>180</firstLayerHeightPercentage>
+    <firstLayerHeightPercentage>90</firstLayerHeightPercentage>
 	<defaultSpeed>1800</defaultSpeed>
 	<outlineUnderspeed>0.5</outlineUnderspeed>
 	<solidInfillUnderspeed>0.5</solidInfillUnderspeed>
