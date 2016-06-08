@@ -31,7 +31,63 @@ The extruder selection:
  - activates and deactivates extruders
  - applies the needed g-code script for starting a print, changing tools and ending a print
 
-### Testing status
+### Settings assignments ...
+
+#### ... to material auto configuration
+
+##### Extruder tab
+ - Extrusion Multiplier
+ - Extrusion Width
+ - Retraction Distance
+ - Extra Restart Distance
+ - Retraction Vertical Lift
+ - Retraction Speed
+ - Coast at End
+ - Coasting Distance
+ - Wipe Nozzle
+ - Wipe Distance
+ 
+##### Layer tab
+ - First Layer Width
+ - First Layer Speed
+
+##### Temperature tab
+ - Extruder Temperature
+ - Bed Temperature
+
+##### Cooling tab
+ - Fan Speed
+ - Adjust printing speed for layers below
+ - Allow speed reductions down to
+ - Increase fan speed for layers below
+ - Maximum cooling fan speed
+ - Bridging fan speed override
+
+##### Other tab
+ - Filament diameter
+ - Filament price
+ - Filament density
+ - Unsupported area threshold
+ - Extra inflation distance
+ - Bridging extrusion multiplier
+ - Bridging speed multiplier
+ 
+#### ... to quality auto configuration
+
+##### Layer tab
+ - Primary Layer Height
+ - Top Solid Layers
+ - Bottom Solid Layers
+ - Outline/Perimeter Shells
+ - First Layer Height
+ 
+##### Infill tab
+ - Interior Fill Percentage
+
+##### Other tab
+ - Default Printing Speed
+
+## Testing status
 I tweak the settings a bit especially for dual prints because I had problems with the first
 layer on the second extruder.
 This is related to the fact that a purge prime retraction sequence is run in the tool change
@@ -49,3 +105,4 @@ The material settings are generic, mostly covering manufacturer's recommendation
 I update frequently (or not) if I find some settings have to be changed.
 
 Normally I do some tweaking of the settings for each print, take them as a base, no print is like the other...
+
