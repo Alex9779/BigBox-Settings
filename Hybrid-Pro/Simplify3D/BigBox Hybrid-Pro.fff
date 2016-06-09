@@ -19,7 +19,7 @@
     <useWipe>0</useWipe>
     <wipeDistance>5</wipeDistance>
   </extruder>
-  <primaryExtruder>1</primaryExtruder>
+  <primaryExtruder>0</primaryExtruder>
   <layerHeight>0.2</layerHeight>
   <topSolidLayers>3</topSolidLayers>
   <bottomSolidLayers>3</bottomSolidLayers>
@@ -35,14 +35,14 @@
   <firstLayerWidthPercentage>130</firstLayerWidthPercentage>
   <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
   <useRaft>0</useRaft>
-  <raftExtruder>1</raftExtruder>
+  <raftExtruder>0</raftExtruder>
   <raftLayers>3</raftLayers>
   <raftOffset>3</raftOffset>
   <raftSeparationDistance>0.1</raftSeparationDistance>
   <raftInfill>90</raftInfill>
   <disableRaftBaseLayers>1</disableRaftBaseLayers>
   <useSkirt>1</useSkirt>
-  <skirtExtruder>1</skirtExtruder>
+  <skirtExtruder>0</skirtExtruder>
   <skirtLayers>1</skirtLayers>
   <skirtOutlines>1</skirtOutlines>
   <skirtOffset>4</skirtOffset>
@@ -58,7 +58,7 @@
   <oozeShieldSidewallShape>1</oozeShieldSidewallShape>
   <oozeShieldSidewallAngle>30</oozeShieldSidewallAngle>
   <oozeShieldSpeedMultiplier>1</oozeShieldSpeedMultiplier>
-  <infillExtruder>1</infillExtruder>
+  <infillExtruder>0</infillExtruder>
   <internalInfillPattern>Rectilinear</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
   <infillPercentage>20</infillPercentage>
@@ -69,7 +69,7 @@
   <infillAngles>45,-45</infillAngles>
   <overlapInfillAngles>0</overlapInfillAngles>
   <generateSupport>0</generateSupport>
-  <supportExtruder>1</supportExtruder>
+  <supportExtruder>0</supportExtruder>
   <supportInfillPercentage>35</supportInfillPercentage>
   <supportExtraInflation>0.5</supportExtraInflation>
   <denseSupportLayers>0</denseSupportLayers>
@@ -88,14 +88,6 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>0</stabilizeAtStartup>
-    <setpoint layer="1" temperature="0"/>
-  </temperatureController>
-  <temperatureController name="Extruder 1 (right)">
-    <temperatureNumber>1</temperatureNumber>
-    <isHeatedBed>0</isHeatedBed>
-    <relayBetweenLayers>0</relayBetweenLayers>
-    <relayBetweenLoops>0</relayBetweenLoops>
-    <stabilizeAtStartup>1</stabilizeAtStartup>
     <setpoint layer="1" temperature="210"/>
   </temperatureController>
   <temperatureController name="Heated Bed">
