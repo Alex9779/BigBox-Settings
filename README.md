@@ -31,6 +31,12 @@ The extruder selection:
  - activates and deactivates extruders
  - applies the needed g-code script for starting a print, changing tools and ending a print
 
+### BigBox Bed model
+The repository includes a model file for the BigBox bed: "BigBoxBedAssembly.stl".
+
+You can load this file in S3D in the application options.
+On the tab "Machine" select the provided STL file to see the bed in the 3D view.
+
 ### Settings assignments ...
 
 #### ... to material auto configuration
