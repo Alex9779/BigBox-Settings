@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="BigBox Dual" version="2016-05-21 23:40:55" app="S3D-Software 3.0.2">
+<profile name="BigBox Dual" version="2016-05-21 23:40:55" app="S3D-Software 3.1.0">
   <baseProfile>Generic Dual Extrusion Profile</baseProfile>
   <printMaterial>PLA</printMaterial>
   <printQuality>Medium/Fast</printQuality>
@@ -178,10 +178,10 @@
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
   <toolChangeGcode></toolChangeGcode>
-  <endingGcode>;BigBox Printer End Script Begin,;relies on M83 (use relative extrusion distances),,G91 ; relative positioning,G1 Z10 F360 ; move Z axis by 10mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y240 F3000 ; move into dock,,;purge extruder 0,T0 ; select extruder 0,G1 E25 F400 ; extrude 25mm,G1 E-14  F4000 ; retract 14mm very fast,,T0 ; select extruder 0,M104 S0 ; turn off extruder 0,M140 S0 ; turn off bed,M84 ; disable steppers,M106 S0 ; disable cooling fans,,M117 Print complete,,;BigBox Printer End Script End</endingGcode>  <createX3G>0</createX3G>
+  <endingGcode>;BigBox Printer End Script Begin,;relies on M83 (use relative extrusion distances),,G91 ; relative positioning,G1 Z10 F360 ; move Z axis by 10mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y240 F3000 ; move into dock,,;purge extruder 0,T0 ; select extruder 0,G1 E25 F400 ; extrude 25mm,G1 E-14  F4000 ; retract 14mm very fast,,T0 ; select extruder 0,M104 S0 ; turn off extruder 0,M140 S0 ; turn off bed,M84 ; disable steppers,M106 S0 ; disable cooling fans,,M117 Print complete,,;BigBox Printer End Script End</endingGcode>
+  <exportFileFormat>gcode</exportFileFormat>
   <celebration>0</celebration>
   <celebrationSong>Random Song</celebrationSong>
-  <createMB5G>0</createMB5G>
   <postProcessing>{REPLACE &quot;; layer&quot; &quot;M117 Layer&quot;} ,{REPLACE &quot; Z = &quot; &quot; Z=&quot;}</postProcessing>
   <defaultSpeed>3000</defaultSpeed>
   <outlineUnderspeed>0.5</outlineUnderspeed>
@@ -1208,7 +1208,7 @@
     <toggleTemperatureController name="Extruder 0 (left)" status="on" stabilize="on"/>
     <toggleTemperatureController name="Extruder 1 (right)" status="off" stabilize="off"/>
     <startingGcode>;BigBox Printer Start Script Begin,;relies on M83 (use relative extrusion distances),,M117 Preparing,M140 S[bed0_temperature] ; set bed temperature,T0 ; select extruder 0,M104 S[extruder0_temperature] ; set extruder 0 temperature,,;home,T0 ; select extruder 0,G28,,;set values,;M92 E290 ;adjust steps per mm,,;move to dock,T0 ; select extruder 0,G1 Z4 F3000 ; lift the head,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y240 F3000 ; move into dock,,;heat bed,M190 S[bed0_temperature] ; wait for bed temperature,,;heat extruder 0,T0 ; select extruder 0,M109 S[extruder0_temperature] ; set extruder 0 temperature and wait,,;prime extruder 0,T0 ; select extruder 0,G1 E15 F200 ; reverse end of print retraction,G1 E10 F50 ; extrude 10mm,,;move out of dock,T0 ; select extruder 0,G1 X80 Y240 F3000 ; move to position in dock,G1 X80 Y200 F3000 ; move out of dock,,M117 Print starting,,;BigBox Printer Start Script End</startingGcode>
-    <toolChangeGcode></toolChangeGcode>
+    <toolChangeGcode/>
     <endingGcode>;BigBox Printer End Script Begin,;relies on M83 (use relative extrusion distances),,G91 ; relative positioning,G1 Z10 F360 ; move Z axis by 10mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y240 F3000 ; move into dock,,;purge extruder 0,T0 ; select extruder 0,G1 E25 F400 ; extrude 25mm,G1 E-14  F4000 ; retract 14mm very fast,,T0 ; select extruder 0,M104 S0 ; turn off extruder 0,M140 S0 ; turn off bed,M84 ; disable steppers,M106 S0 ; disable cooling fans,,M117 Print complete,,;BigBox Printer End Script End</endingGcode>
     <strokeXoverride>260</strokeXoverride>
     <strokeYoverride>200</strokeYoverride>
@@ -1244,7 +1244,7 @@
     <toggleTemperatureController name="Extruder 0 (left)" status="on" stabilize="on"/>
     <toggleTemperatureController name="Extruder 1 (right)" status="on" stabilize="on"/>
     <startingGcode>;BigBox Printer Start Script Begin,;relies on M83 (use relative extrusion distances),,M117 Preparing,M140 S[bed0_temperature] ; set bed temperature,T0 ; select extruder 0,M104 S[extruder0_temperature] ; set extruder 0 temperature,T1 ; select extruder 1,M104 S[extruder1_temperature] ; set extruder 1 temperature,,;home,T0 ; select extruder 0,G28,,;set values,M218 T1 X35 Y0 ; set extruder 1 offset,;M92 E290 ; adjust steps per mm for your filament,,;move to dock,T0 ; select extruder 0,G1 Z4 F3000 ; lift the head,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y240 F3000 ; move into dock,,;heat bed,M190 S[bed0_temperature] ; wait for bed temperature,,;heat extruder 0,T0 ; select extruder 0,M109 S[extruder0_temperature] ; set extruder 0 temperature and wait,,;heat extruder 1,T1 ; select extruder 1,M109 S[extruder1_temperature] ; set extruder 1 temperature and wait,,M117 Print starting,,;BigBox Printer Start Script End</startingGcode>
-    <toolChangeGcode></toolChangeGcode>
+    <toolChangeGcode/>
     <endingGcode>;BigBox Printer End Script Begin,;relies on M83 (use relative extrusion distances),,G91 ; relative positioning,G1 Z10 F360 ; move Z axis by 10mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y240 F3000 ; move into dock,,;purge extruder 0,T0 ; select extruder 0,G1 E25 F400 ; extrude 25mm,G1 E-14  F4000 ; retract 14mm very fast,,;purge extruder 2,T1 ; select extruder 1,G1 E25 F400 ; extrude 25mm,G1 E-14  F4000 ; retract 14mm very fast,,T0 ; select extruder 0,M104 S0 ; turn off extruder 0,T1 ; select extruder 1,M104 S0 ; turn off extruder 1,M140 S0 ; turn off bed,M84 ; disable steppers,M106 S0 ; disable cooling fans,T0 ; select extruder 0,,M117 Print complete,,;BigBox Printer End Script End</endingGcode>
     <strokeXoverride>260</strokeXoverride>
     <strokeYoverride>200</strokeYoverride>

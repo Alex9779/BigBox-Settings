@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
-<profile name="BigBox Pro" version="2016-05-21 23:40:55" app="S3D-Software 3.0.2">
+<profile name="BigBox Pro" version="2016-05-21 23:40:55" app="S3D-Software 3.1.0">
   <baseProfile>Generic Dual Extrusion Profile</baseProfile>
   <printMaterial>PLA</printMaterial>
   <printQuality>Medium/Fast</printQuality>
+  <printExtruders></printExtruders>
   <extruder name="Extruder">
     <toolheadNumber>0</toolheadNumber>
     <diameter>0.4</diameter>
@@ -154,10 +155,9 @@
   <retractionGcode></retractionGcode>
   <toolChangeGcode></toolChangeGcode>
   <endingGcode>;BigBox Printer End Script Begin;relies on M83 (use relative extrusion distances)G91 ; relative positioningG1 Z10 F360 ; move Z axis by 10mmG90 ; absolute positioning;move to dockG1 X70 Y200 F3000 ; move to position in front of dockG1 X70 Y240 F3000 ; move into dock;purge extruderG1 E25 F400 ; extrude 25mmG1 E-14  F4000 ; retract 14mm very fastM104 S0 ; turn off extruderM140 S0 ; turn off bedM84 ; disable steppersM106 S0 ; disable cooling fansM117 Print complete;BigBox Printer End Script End</endingGcode>
-  <createX3G>0</createX3G>
+  <exportFileFormat>gcode</exportFileFormat>
   <celebration>0</celebration>
   <celebrationSong>Random Song</celebrationSong>
-  <createMB5G>0</createMB5G>
   <postProcessing>{REPLACE &quot;; layer&quot; &quot;M117 Layer&quot;} ,{REPLACE &quot; Z = &quot; &quot; Z=&quot;}</postProcessing>
   <defaultSpeed>3000</defaultSpeed>
   <outlineUnderspeed>0.5</outlineUnderspeed>
