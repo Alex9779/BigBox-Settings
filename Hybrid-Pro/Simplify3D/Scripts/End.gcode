@@ -13,6 +13,10 @@ G1 X95 Y240 F3000 ; move into dock
 G1 E25 F400 ; extrude 25mm
 G1 E-14  F4000 ; retract 14mm very fast
 
+G91 ; relative positioning
+G1 Z-5 F360 ; move Z axis by -5mm to be safe for 4mm homing Z raise
+G90 ; absolute positioning
+
 M104 S0 ; turn off extruder
 M140 S0 ; turn off bed
 M84 ; disable steppers
