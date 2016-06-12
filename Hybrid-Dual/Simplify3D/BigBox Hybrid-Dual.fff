@@ -104,7 +104,7 @@
     <isHeatedBed>0</isHeatedBed>
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
-    <stabilizeAtStartup>0</stabilizeAtStartup>
+    <stabilizeAtStartup>1</stabilizeAtStartup>
     <setpoint layer="1" temperature="0"/>
   </temperatureController>
   <temperatureController name="Extruder 1 (right)">
