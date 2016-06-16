@@ -215,6 +215,14 @@
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
     </fanSpeed>
+	<adjustSpeedForCooling>1</adjustSpeedForCooling>
+	<minSpeedLayerTime>15</minSpeedLayerTime>
+	<minCoolingSpeedSlowdown>20</minCoolingSpeedSlowdown>
+	<increaseFanForCooling>0</increaseFanForCooling>
+	<minFanLayerTime>45</minFanLayerTime>
+	<maxCoolingFanSpeed>80</maxCoolingFanSpeed>
+	<increaseFanForBridging>1</increaseFanForBridging>
+	<bridgingFanSpeed>80</bridgingFanSpeed>
     <temperatureController name="Extruder">
       <temperatureNumber>0</temperatureNumber>
       <isHeatedBed>0</isHeatedBed>
@@ -273,6 +281,14 @@
       <setpoint layer="9" speed="90"/>
       <setpoint layer="10" speed="100"/>
     </fanSpeed>
+    <adjustSpeedForCooling>1</adjustSpeedForCooling>
+    <minSpeedLayerTime>15</minSpeedLayerTime>
+    <minCoolingSpeedSlowdown>20</minCoolingSpeedSlowdown>
+    <increaseFanForCooling>0</increaseFanForCooling>
+    <minFanLayerTime>45</minFanLayerTime>
+    <maxCoolingFanSpeed>80</maxCoolingFanSpeed>
+    <increaseFanForBridging>1</increaseFanForBridging>
+    <bridgingFanSpeed>80</bridgingFanSpeed>
     <temperatureController name="Extruder">
       <temperatureNumber>0</temperatureNumber>
       <isHeatedBed>0</isHeatedBed>
@@ -322,6 +338,14 @@
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
     </fanSpeed>
+	<adjustSpeedForCooling>1</adjustSpeedForCooling>
+	<minSpeedLayerTime>15</minSpeedLayerTime>
+	<minCoolingSpeedSlowdown>20</minCoolingSpeedSlowdown>
+	<increaseFanForCooling>0</increaseFanForCooling>
+	<minFanLayerTime>45</minFanLayerTime>
+	<maxCoolingFanSpeed>80</maxCoolingFanSpeed>
+	<increaseFanForBridging>1</increaseFanForBridging>
+	<bridgingFanSpeed>80</bridgingFanSpeed>
     <temperatureController name="Extruder">
       <temperatureNumber>0</temperatureNumber>
       <isHeatedBed>0</isHeatedBed>
@@ -377,6 +401,14 @@
       <setpoint layer="8" speed="35"/>
       <setpoint layer="9" speed="40"/>
     </fanSpeed>
+	<adjustSpeedForCooling>1</adjustSpeedForCooling>
+	<minSpeedLayerTime>15</minSpeedLayerTime>
+	<minCoolingSpeedSlowdown>20</minCoolingSpeedSlowdown>
+	<increaseFanForCooling>0</increaseFanForCooling>
+	<minFanLayerTime>45</minFanLayerTime>
+	<maxCoolingFanSpeed>80</maxCoolingFanSpeed>
+	<increaseFanForBridging>1</increaseFanForBridging>
+	<bridgingFanSpeed>80</bridgingFanSpeed>
     <temperatureController name="Extruder">
       <temperatureNumber>0</temperatureNumber>
       <isHeatedBed>0</isHeatedBed>
