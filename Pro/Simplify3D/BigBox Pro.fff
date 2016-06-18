@@ -590,6 +590,14 @@
       <setpoint layer="6" speed="25"/>
       <setpoint layer="7" speed="30"/>
     </fanSpeed>
+    <adjustSpeedForCooling>1</adjustSpeedForCooling>
+    <minSpeedLayerTime>15</minSpeedLayerTime>
+    <minCoolingSpeedSlowdown>20</minCoolingSpeedSlowdown>
+    <increaseFanForCooling>0</increaseFanForCooling>
+    <minFanLayerTime>45</minFanLayerTime>
+    <maxCoolingFanSpeed>80</maxCoolingFanSpeed>
+    <increaseFanForBridging>1</increaseFanForBridging>
+    <bridgingFanSpeed>80</bridgingFanSpeed>
     <temperatureController name="Extruder">
       <temperatureNumber>0</temperatureNumber>
       <isHeatedBed>0</isHeatedBed>
