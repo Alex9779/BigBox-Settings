@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <profile name="BigBox Pro"
-         version="2016-06-30 15:09:31"
+         version="2016-07-05 23:18:10"
          app="S3D-Software 3.1.0">
    <baseProfile>Generic Dual Extrusion Profile</baseProfile>
    <printMaterial>PLA</printMaterial>
@@ -150,9 +150,9 @@
    <firmwareTypeOverride>RepRap (Marlin/Repetier/Sprinter)</firmwareTypeOverride>
    <GPXconfigOverride>r2</GPXconfigOverride>
    <baudRateOverride>115200</baudRateOverride>
-   <overridePrinterModels>0</overridePrinterModels>
-   <printerModelsOverride/>
-   <startingGcode>;BigBox Pro Start Script Begin,;relies on M83 (use relative extrusion distances),,M117 Preparing,M190 S60 ; wait for bed to reach 60C,M140 S[bed0_temperature] ; set bed temperature,T0 ; select extruder 0,M104 S[extruder0_temperature] ; set extruder 0 temperature,,;home,G28,,;set values,;M92 E304 ; adjust steps per mm for your filament,,; lift the head,G91 ; relative positioning,G1 Z5 F360 ; move Z axis by 5mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y240 F3000 ; move into dock,,;heat bed,M190 S[bed0_temperature] ; wait for bed temperature,,;heat extruder 0,T0 ; select extruder 0,M109 S[extruder0_temperature] ; set extruder 0 temperature and wait,,;prime extruder,T0 ; select extruder 0,G1 E15 F200 ; reverse end of print retraction,G1 E10 F50 ; extrude 10mm,,;move out of dock,T0 ; select extruder 0,G1 X80 Y240 F3000 ; move a little in dock,G1 X80 Y200 F3000 ; move out of dock,,M117 Print starting,,;BigBox Pro Start Script End</startingGcode>
+   <overridePrinterModels>1</overridePrinterModels>
+   <printerModelsOverride>BigBoxBedAssembly.stl</printerModelsOverride>
+   <startingGcode>;BigBox Pro Start Script Begin,;relies on M83 (use relative extrusion distances),,;home,G28,,M117 Preparing,M190 S50 ; wait for bed to reach 50C,M140 S[bed0_temperature] ; set bed temperature,M104 S[extruder0_temperature] T0; set extruder 0 temperature,,;set values,;M92 E304 ; adjust steps per mm for your filament,,; lift the head,G91 ; relative positioning,G1 Z5 F360 ; move Z axis by 5mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y240 F3000 ; move into dock,,;heat bed,M190 S[bed0_temperature] ; wait for bed temperature,,;heat extruder 0,T0 ; select extruder 0,M109 S[extruder0_temperature] ; set extruder 0 temperature and wait,,;prime extruder,T0 ; select extruder 0,G1 E15 F200 ; reverse end of print retraction,G1 E10 F50 ; extrude 10mm,,;move out of dock,T0 ; select extruder 0,G1 X80 Y240 F3000 ; move a little in dock,G1 X80 Y200 F3000 ; move out of dock,,M117 Print starting,,;BigBox Pro Start Script End</startingGcode>
    <layerChangeGcode/>
    <retractionGcode/>
    <toolChangeGcode/>
@@ -528,8 +528,6 @@
          <setpoint layer="5" speed="20"/>
          <setpoint layer="6" speed="25"/>
          <setpoint layer="7" speed="30"/>
-         <setpoint layer="8" speed="35"/>
-         <setpoint layer="9" speed="40"/>
       </fanSpeed>
       <adjustSpeedForCooling>1</adjustSpeedForCooling>
       <minSpeedLayerTime>15</minSpeedLayerTime>

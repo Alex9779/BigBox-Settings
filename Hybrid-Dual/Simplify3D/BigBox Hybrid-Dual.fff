@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <profile name="BigBox Hybrid-Dual"
-         version="2016-06-30 15:09:29"
+         version="2016-07-05 23:18:06"
          app="S3D-Software 3.1.0">
    <baseProfile>Generic Dual Extrusion Profile</baseProfile>
    <printMaterial>PLA</printMaterial>
    <printQuality>Medium/Fast</printQuality>
    <printExtruders>Extruder 1 (right) only</printExtruders>
-   <extruder name="Extruder 1 (right)">
+   <extruder name="Extruder 0 (left)">
       <toolheadNumber>0</toolheadNumber>
       <diameter>0.4</diameter>
       <autoWidth>1</autoWidth>
@@ -22,7 +22,7 @@
       <useWipe>0</useWipe>
       <wipeDistance>5</wipeDistance>
    </extruder>
-   <extruder name="Extruder 0 (left)">
+   <extruder name="Extruder 1 (right)">
       <toolheadNumber>1</toolheadNumber>
       <diameter>0.4</diameter>
       <autoWidth>1</autoWidth>
@@ -101,7 +101,7 @@
    <supportGridSpacing>1</supportGridSpacing>
    <maxOverhangAngle>50</maxOverhangAngle>
    <supportAngles>45,-45</supportAngles>
-   <temperatureController name="Extruder 1 (right)">
+   <temperatureController name="Extruder 0 (left)">
       <temperatureNumber>0</temperatureNumber>
       <isHeatedBed>0</isHeatedBed>
       <relayBetweenLayers>0</relayBetweenLayers>
@@ -109,7 +109,7 @@
       <stabilizeAtStartup>1</stabilizeAtStartup>
       <setpoint layer="1" temperature="210"/>
    </temperatureController>
-   <temperatureController name="Extruder 0 (left)">
+   <temperatureController name="Extruder 1 (right)">
       <temperatureNumber>1</temperatureNumber>
       <isHeatedBed>0</isHeatedBed>
       <relayBetweenLayers>0</relayBetweenLayers>
@@ -174,13 +174,13 @@
    <firmwareTypeOverride>RepRap (Marlin/Repetier/Sprinter)</firmwareTypeOverride>
    <GPXconfigOverride>r2</GPXconfigOverride>
    <baudRateOverride>115200</baudRateOverride>
-   <overridePrinterModels>0</overridePrinterModels>
-   <printerModelsOverride/>
-   <startingGcode>;BigBox Hybrid-Dual Start Script Begin,;relies on M83 (use relative extrusion distances),,M117 Preparing,M190 S60 ; wait for bed to reach 60C,M140 S[bed0_temperature] ; set bed temperature,T1 ; select extruder 1,M104 S[extruder0_temperature] ; set extruder temperature,,;home,G28,,;set values,;M92 E417.5 ; adjust steps per mm for your filament,M218 T1 X38 Y0 ; set extruder 1 offset,,; lift the head,G91 ; relative positioning,G1 Z5 F360 ; move Z axis by 5mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y235 F3000 ; move into dock,,;heat bed,M190 S[bed0_temperature] ; wait for bed temperature,,;heat extruder 1,T1 ; select extruder 1,M109 S[extruder1_temperature] ; set extruder 1 temperature and wait,,;prime extruder,T1 ; select extruder 1,G1 E15 F200 ; reverse end of print retraction,G1 E10 F50 ; extrude 10mm,,;move out of dock,T0 ; select extruder 0,G1 X80 Y235 F3000 ; move a little in dock,G1 X80 Y200 F3000 ; move out of dock,,M117 Print starting,,;BigBox Hybrid-Dual Start Script End</startingGcode>
+   <overridePrinterModels>1</overridePrinterModels>
+   <printerModelsOverride>BigBoxBedAssembly.stl</printerModelsOverride>
+   <startingGcode>;BigBox Hybrid-Dual Start Script Begin,;relies on M83 (use relative extrusion distances),,;home,G28,,M117 Preparing,M190 S50 ; wait for bed to reach 50C,M140 S[bed0_temperature] ; set bed temperature,M104 S[extruder0_temperature] T1; set extruder temperature,,;set values,;M92 E417.5 ; adjust steps per mm for your filament,M218 T1 X38 Y0 ; set extruder 1 offset,,; lift the head,G91 ; relative positioning,G1 Z5 F360 ; move Z axis by 5mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y235 F3000 ; move into dock,,;heat bed,M190 S[bed0_temperature] ; wait for bed temperature,,;heat extruder 1,T1 ; select extruder 1,M109 S[extruder1_temperature] ; set extruder 1 temperature and wait,,;prime extruder,T1 ; select extruder 1,G1 E15 F200 ; reverse end of print retraction,G1 E10 F50 ; extrude 10mm,,;move out of dock,T0 ; select extruder 0,G1 X80 Y235 F3000 ; move a little in dock,G1 X80 Y200 F3000 ; move out of dock,,M117 Print starting,,;BigBox Hybrid-Dual Start Script End</startingGcode>
    <layerChangeGcode/>
    <retractionGcode/>
    <toolChangeGcode/>
-   <endingGcode>;BigBox Hybrid-Dual End Script Begin,;relies on M83 (use relative extrusion distances),,; lift the head,G91 ; relative positioning,G1 Z5 F360 ; move Z axis by 5mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y235 F3000 ; move into dock,,;purge extruder 1,T1 ; select extruder 1,G1 F400,G1 E25 F400 ; extrude 25mm,G1 E-14  F4000 ; retract 14mm very fast,,G91 ; relative positioning,G1 Z-5 F360 ; move Z axis by -5mm to be safe for 4mm homing Z raise,G90 ; absolute positioning,,T0 ; select extruder 0,M104 S0 ; turn off extruder 0,T1 ; select extruder 1,M104 S0 ; turn off extruder 1,M140 S0 ; turn off bed,M84 ; disable steppers,M106 S0 ; disable cooling fans,T0 ; select extruder 0,,M117 Print complete,,;BigBox Hybrid-Dual End Script End</endingGcode>
+   <endingGcode>;BigBox Hybrid-Dual End Script Begin,;relies on M83 (use relative extrusion distances),,; lift the head,G91 ; relative positioning,G1 Z5 F360 ; move Z axis by 5mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y235 F3000 ; move into dock,,;purge extruder 1,T1 ; select extruder 1,G1 F400,G1 E25 F400 ; extrude 25mm,G1 E-14  F4000 ; retract 14mm very fast,,G91 ; relative positioning,G1 Z-5 F360 ; move Z axis by -5mm to be safe for 4mm homing Z raise,G90 ; absolute positioning,,M104 S0 T0; turn off extruder 0,M104 S0 T1; turn off extruder 1,M140 S0 ; turn off bed,M84 ; disable steppers,M106 S0 ; disable cooling fans,T0 ; select extruder 0,,M117 Print complete,,;BigBox Hybrid-Dual End Script End</endingGcode>
    <exportFileFormat>gcode</exportFileFormat>
    <celebration>0</celebration>
    <celebrationSong>Random Song</celebrationSong>
@@ -264,7 +264,7 @@
       <maxCoolingFanSpeed>80</maxCoolingFanSpeed>
       <increaseFanForBridging>1</increaseFanForBridging>
       <bridgingFanSpeed>80</bridgingFanSpeed>
-      <temperatureController name="Extruder 1 (right)">
+      <temperatureController name="Extruder 0 (left)">
          <temperatureNumber>0</temperatureNumber>
          <isHeatedBed>0</isHeatedBed>
          <relayBetweenLayers>0</relayBetweenLayers>
@@ -272,7 +272,7 @@
          <stabilizeAtStartup>1</stabilizeAtStartup>
          <setpoint layer="1" temperature="260"/>
       </temperatureController>
-      <temperatureController name="Extruder 0 (left)">
+      <temperatureController name="Extruder 1 (right)">
          <temperatureNumber>1</temperatureNumber>
          <isHeatedBed>0</isHeatedBed>
          <relayBetweenLayers>0</relayBetweenLayers>
@@ -354,7 +354,7 @@
       <maxCoolingFanSpeed>80</maxCoolingFanSpeed>
       <increaseFanForBridging>1</increaseFanForBridging>
       <bridgingFanSpeed>80</bridgingFanSpeed>
-      <temperatureController name="Extruder 1 (right)">
+      <temperatureController name="Extruder 0 (left)">
          <temperatureNumber>0</temperatureNumber>
          <isHeatedBed>0</isHeatedBed>
          <relayBetweenLayers>0</relayBetweenLayers>
@@ -362,7 +362,7 @@
          <stabilizeAtStartup>1</stabilizeAtStartup>
          <setpoint layer="1" temperature="210"/>
       </temperatureController>
-      <temperatureController name="Extruder 0 (left)">
+      <temperatureController name="Extruder 1 (right)">
          <temperatureNumber>1</temperatureNumber>
          <isHeatedBed>0</isHeatedBed>
          <relayBetweenLayers>0</relayBetweenLayers>
@@ -434,7 +434,7 @@
       <maxCoolingFanSpeed>80</maxCoolingFanSpeed>
       <increaseFanForBridging>1</increaseFanForBridging>
       <bridgingFanSpeed>80</bridgingFanSpeed>
-      <temperatureController name="Extruder 1 (right)">
+      <temperatureController name="Extruder 0 (left)">
          <temperatureNumber>0</temperatureNumber>
          <isHeatedBed>0</isHeatedBed>
          <relayBetweenLayers>0</relayBetweenLayers>
@@ -442,7 +442,7 @@
          <stabilizeAtStartup>1</stabilizeAtStartup>
          <setpoint layer="1" temperature="260"/>
       </temperatureController>
-      <temperatureController name="Extruder 0 (left)">
+      <temperatureController name="Extruder 1 (right)">
          <temperatureNumber>1</temperatureNumber>
          <isHeatedBed>0</isHeatedBed>
          <relayBetweenLayers>0</relayBetweenLayers>
@@ -520,7 +520,7 @@
       <maxCoolingFanSpeed>80</maxCoolingFanSpeed>
       <increaseFanForBridging>1</increaseFanForBridging>
       <bridgingFanSpeed>80</bridgingFanSpeed>
-      <temperatureController name="Extruder 1 (right)">
+      <temperatureController name="Extruder 0 (left)">
          <temperatureNumber>0</temperatureNumber>
          <isHeatedBed>0</isHeatedBed>
          <relayBetweenLayers>0</relayBetweenLayers>
@@ -528,7 +528,7 @@
          <stabilizeAtStartup>1</stabilizeAtStartup>
          <setpoint layer="1" temperature="220"/>
       </temperatureController>
-      <temperatureController name="Extruder 0 (left)">
+      <temperatureController name="Extruder 1 (right)">
          <temperatureNumber>1</temperatureNumber>
          <isHeatedBed>0</isHeatedBed>
          <relayBetweenLayers>0</relayBetweenLayers>
@@ -608,7 +608,7 @@
       <maxCoolingFanSpeed>80</maxCoolingFanSpeed>
       <increaseFanForBridging>1</increaseFanForBridging>
       <bridgingFanSpeed>80</bridgingFanSpeed>
-      <temperatureController name="Extruder 1 (right)">
+      <temperatureController name="Extruder 0 (left)">
          <temperatureNumber>0</temperatureNumber>
          <isHeatedBed>0</isHeatedBed>
          <relayBetweenLayers>0</relayBetweenLayers>
@@ -616,7 +616,7 @@
          <stabilizeAtStartup>1</stabilizeAtStartup>
          <setpoint layer="1" temperature="190"/>
       </temperatureController>
-      <temperatureController name="Extruder 0 (left)">
+      <temperatureController name="Extruder 1 (right)">
          <temperatureNumber>1</temperatureNumber>
          <isHeatedBed>0</isHeatedBed>
          <relayBetweenLayers>0</relayBetweenLayers>
@@ -683,8 +683,6 @@
          <setpoint layer="5" speed="20"/>
          <setpoint layer="6" speed="25"/>
          <setpoint layer="7" speed="30"/>
-         <setpoint layer="8" speed="35"/>
-         <setpoint layer="9" speed="40"/>
       </fanSpeed>
       <adjustSpeedForCooling>1</adjustSpeedForCooling>
       <minSpeedLayerTime>15</minSpeedLayerTime>
@@ -694,7 +692,7 @@
       <maxCoolingFanSpeed>80</maxCoolingFanSpeed>
       <increaseFanForBridging>1</increaseFanForBridging>
       <bridgingFanSpeed>80</bridgingFanSpeed>
-      <temperatureController name="Extruder 1 (right)">
+      <temperatureController name="Extruder 0 (left)">
          <temperatureNumber>0</temperatureNumber>
          <isHeatedBed>0</isHeatedBed>
          <relayBetweenLayers>0</relayBetweenLayers>
@@ -702,7 +700,7 @@
          <stabilizeAtStartup>1</stabilizeAtStartup>
          <setpoint layer="1" temperature="245"/>
       </temperatureController>
-      <temperatureController name="Extruder 0 (left)">
+      <temperatureController name="Extruder 1 (right)">
          <temperatureNumber>1</temperatureNumber>
          <isHeatedBed>0</isHeatedBed>
          <relayBetweenLayers>0</relayBetweenLayers>
@@ -782,7 +780,7 @@
       <maxCoolingFanSpeed>80</maxCoolingFanSpeed>
       <increaseFanForBridging>1</increaseFanForBridging>
       <bridgingFanSpeed>80</bridgingFanSpeed>
-      <temperatureController name="Extruder 1 (right)">
+      <temperatureController name="Extruder 0 (left)">
          <temperatureNumber>0</temperatureNumber>
          <isHeatedBed>0</isHeatedBed>
          <relayBetweenLayers>0</relayBetweenLayers>
@@ -790,7 +788,7 @@
          <stabilizeAtStartup>1</stabilizeAtStartup>
          <setpoint layer="1" temperature="240"/>
       </temperatureController>
-      <temperatureController name="Extruder 0 (left)">
+      <temperatureController name="Extruder 1 (right)">
          <temperatureNumber>1</temperatureNumber>
          <isHeatedBed>0</isHeatedBed>
          <relayBetweenLayers>0</relayBetweenLayers>
@@ -870,7 +868,7 @@
       <maxCoolingFanSpeed>80</maxCoolingFanSpeed>
       <increaseFanForBridging>1</increaseFanForBridging>
       <bridgingFanSpeed>80</bridgingFanSpeed>
-      <temperatureController name="Extruder 1 (right)">
+      <temperatureController name="Extruder 0 (left)">
          <temperatureNumber>0</temperatureNumber>
          <isHeatedBed>0</isHeatedBed>
          <relayBetweenLayers>0</relayBetweenLayers>
@@ -878,7 +876,7 @@
          <stabilizeAtStartup>1</stabilizeAtStartup>
          <setpoint layer="1" temperature="210"/>
       </temperatureController>
-      <temperatureController name="Extruder 0 (left)">
+      <temperatureController name="Extruder 1 (right)">
          <temperatureNumber>1</temperatureNumber>
          <isHeatedBed>0</isHeatedBed>
          <relayBetweenLayers>0</relayBetweenLayers>
@@ -958,7 +956,7 @@
       <maxCoolingFanSpeed>80</maxCoolingFanSpeed>
       <increaseFanForBridging>1</increaseFanForBridging>
       <bridgingFanSpeed>80</bridgingFanSpeed>
-      <temperatureController name="Extruder 1 (right)">
+      <temperatureController name="Extruder 0 (left)">
          <temperatureNumber>0</temperatureNumber>
          <isHeatedBed>0</isHeatedBed>
          <relayBetweenLayers>0</relayBetweenLayers>
@@ -966,7 +964,7 @@
          <stabilizeAtStartup>1</stabilizeAtStartup>
          <setpoint layer="1" temperature="190"/>
       </temperatureController>
-      <temperatureController name="Extruder 0 (left)">
+      <temperatureController name="Extruder 1 (right)">
          <temperatureNumber>1</temperatureNumber>
          <isHeatedBed>0</isHeatedBed>
          <relayBetweenLayers>0</relayBetweenLayers>
@@ -1044,7 +1042,7 @@
       <maxCoolingFanSpeed>80</maxCoolingFanSpeed>
       <increaseFanForBridging>1</increaseFanForBridging>
       <bridgingFanSpeed>80</bridgingFanSpeed>
-      <temperatureController name="Extruder 1 (right)">
+      <temperatureController name="Extruder 0 (left)">
          <temperatureNumber>0</temperatureNumber>
          <isHeatedBed>0</isHeatedBed>
          <relayBetweenLayers>0</relayBetweenLayers>
@@ -1052,7 +1050,7 @@
          <stabilizeAtStartup>1</stabilizeAtStartup>
          <setpoint layer="1" temperature="245"/>
       </temperatureController>
-      <temperatureController name="Extruder 0 (left)">
+      <temperatureController name="Extruder 1 (right)">
          <temperatureNumber>1</temperatureNumber>
          <isHeatedBed>0</isHeatedBed>
          <relayBetweenLayers>0</relayBetweenLayers>
@@ -1120,7 +1118,7 @@
          <setpoint layer="6" speed="25"/>
          <setpoint layer="7" speed="30"/>
       </fanSpeed>
-      <temperatureController name="Extruder 1 (right)">
+      <temperatureController name="Extruder 0 (left)">
          <temperatureNumber>0</temperatureNumber>
          <isHeatedBed>0</isHeatedBed>
          <relayBetweenLayers>0</relayBetweenLayers>
@@ -1128,7 +1126,7 @@
          <stabilizeAtStartup>1</stabilizeAtStartup>
          <setpoint layer="1" temperature="240"/>
       </temperatureController>
-      <temperatureController name="Extruder 0 (left)">
+      <temperatureController name="Extruder 1 (right)">
          <temperatureNumber>1</temperatureNumber>
          <isHeatedBed>0</isHeatedBed>
          <relayBetweenLayers>0</relayBetweenLayers>
@@ -1293,9 +1291,9 @@
       <useOozeShield>0</useOozeShield>
       <toggleTemperatureController name="Extruder 0 (left)" status="on" stabilize="on"/>
       <toggleTemperatureController name="Extruder 1 (right)" status="off" stabilize="off"/>
-      <startingGcode>;BigBox Hybrid-Dual Start Script Begin,;relies on M83 (use relative extrusion distances),,M117 Preparing,M190 S60 ; wait for bed to reach 60C,M140 S[bed0_temperature] ; set bed temperature,T0 ; select extruder 0,M104 S[extruder0_temperature] ; set extruder 0 temperature,,;home,G28,,;set values,;M92 E417.5 ; adjust steps per mm for your filament,M218 T1 X38 Y0 ; set extruder 1 offset,,; lift the head,G91 ; relative positioning,G1 Z5 F360 ; move Z axis by 5mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y235 F3000 ; move into dock,,;heat bed,M190 S[bed0_temperature] ; wait for bed temperature,,;heat extruder 0,T0 ; select extruder 0,M109 S[extruder0_temperature] ; set extruder 0 temperature and wait,,;prime extruder,T0 ; select extruder 0,G1 E15 F200 ; reverse end of print retraction,G1 E10 F50 ; extrude 10mm,,;move out of dock,T0 ; select extruder 0,G1 X80 Y235 F3000 ; move a little in dock,G1 X80 Y200 F3000 ; move out of dock,,M117 Print starting,,;BigBox Hybrid-Dual Start Script End</startingGcode>
+      <startingGcode>;BigBox Hybrid-Dual Start Script Begin,;relies on M83 (use relative extrusion distances),,;home,G28,,M117 Preparing,M190 S50 ; wait for bed to reach 50C,M140 S[bed0_temperature] ; set bed temperature,M104 S[extruder0_temperature] T0; set extruder 0 temperature,,;set values,;M92 E417.5 ; adjust steps per mm for your filament,M218 T1 X38 Y0 ; set extruder 1 offset,,; lift the head,G91 ; relative positioning,G1 Z5 F360 ; move Z axis by 5mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y235 F3000 ; move into dock,,;heat bed,M190 S[bed0_temperature] ; wait for bed temperature,,;heat extruder 0,T0 ; select extruder 0,M109 S[extruder0_temperature] ; set extruder 0 temperature and wait,,;prime extruder,T0 ; select extruder 0,G1 E15 F200 ; reverse end of print retraction,G1 E10 F50 ; extrude 10mm,,;move out of dock,T0 ; select extruder 0,G1 X80 Y235 F3000 ; move a little in dock,G1 X80 Y200 F3000 ; move out of dock,,M117 Print starting,,;BigBox Hybrid-Dual Start Script End</startingGcode>
       <toolChangeGcode/>
-      <endingGcode>;BigBox Hybrid-Dual End Script Begin,;relies on M83 (use relative extrusion distances),,; lift the head,G91 ; relative positioning,G1 Z5 F360 ; move Z axis by 5mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y235 F3000 ; move into dock,,;purge extruder 0,T0 ; select extruder 0,G1 F400,G1 E25 F400 ; extrude 25mm,G1 E-14  F4000 ; retract 14mm very fast,,G91 ; relative positioning,G1 Z-5 F360 ; move Z axis by -5mm to be safe for 4mm homing Z raise,G90 ; absolute positioning,,T0 ; select extruder 0,M104 S0 ; turn off extruder 0,T1 ; select extruder 1,M104 S0 ; turn off extruder 1,M140 S0 ; turn off bed,M84 ; disable steppers,M106 S0 ; disable cooling fans,T0 ; select extruder 0,,M117 Print complete,,;BigBox Hybrid-Dual End Script End</endingGcode>
+      <endingGcode>;BigBox Hybrid-Dual End Script Begin,;relies on M83 (use relative extrusion distances),,; lift the head,G91 ; relative positioning,G1 Z5 F360 ; move Z axis by 5mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y235 F3000 ; move into dock,,;purge extruder 0,T0 ; select extruder 0,G1 F400,G1 E25 F400 ; extrude 25mm,G1 E-14  F4000 ; retract 14mm very fast,,G91 ; relative positioning,G1 Z-5 F360 ; move Z axis by -5mm to be safe for 4mm homing Z raise,G90 ; absolute positioning,,M104 S0 T0; turn off extruder 0,M104 S0 T1; turn off extruder 1,M140 S0 ; turn off bed,M84 ; disable steppers,M106 S0 ; disable cooling fans,T0 ; select extruder 0,,M117 Print complete,,;BigBox Hybrid-Dual End Script End</endingGcode>
       <strokeXoverride>300</strokeXoverride>
       <strokeYoverride>200</strokeYoverride>
       <strokeZoverride>300</strokeZoverride>
@@ -1311,9 +1309,9 @@
       <useOozeShield>0</useOozeShield>
       <toggleTemperatureController name="Extruder 0 (left)" status="off" stabilize="off"/>
       <toggleTemperatureController name="Extruder 1 (right)" status="on" stabilize="on"/>
-      <startingGcode>;BigBox Hybrid-Dual Start Script Begin,;relies on M83 (use relative extrusion distances),,M117 Preparing,M190 S60 ; wait for bed to reach 60C,M140 S[bed0_temperature] ; set bed temperature,T1 ; select extruder 1,M104 S[extruder0_temperature] ; set extruder temperature,,;home,G28,,;set values,;M92 E417.5 ; adjust steps per mm for your filament,M218 T1 X38 Y0 ; set extruder 1 offset,,; lift the head,G91 ; relative positioning,G1 Z5 F360 ; move Z axis by 5mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y235 F3000 ; move into dock,,;heat bed,M190 S[bed0_temperature] ; wait for bed temperature,,;heat extruder 1,T1 ; select extruder 1,M109 S[extruder1_temperature] ; set extruder 1 temperature and wait,,;prime extruder,T1 ; select extruder 1,G1 E15 F200 ; reverse end of print retraction,G1 E10 F50 ; extrude 10mm,,;move out of dock,T0 ; select extruder 0,G1 X80 Y235 F3000 ; move a little in dock,G1 X80 Y200 F3000 ; move out of dock,,M117 Print starting,,;BigBox Hybrid-Dual Start Script End</startingGcode>
+      <startingGcode>;BigBox Hybrid-Dual Start Script Begin,;relies on M83 (use relative extrusion distances),,;home,G28,,M117 Preparing,M190 S50 ; wait for bed to reach 50C,M140 S[bed0_temperature] ; set bed temperature,M104 S[extruder0_temperature] T1; set extruder temperature,,;set values,;M92 E417.5 ; adjust steps per mm for your filament,M218 T1 X38 Y0 ; set extruder 1 offset,,; lift the head,G91 ; relative positioning,G1 Z5 F360 ; move Z axis by 5mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y235 F3000 ; move into dock,,;heat bed,M190 S[bed0_temperature] ; wait for bed temperature,,;heat extruder 1,T1 ; select extruder 1,M109 S[extruder1_temperature] ; set extruder 1 temperature and wait,,;prime extruder,T1 ; select extruder 1,G1 E15 F200 ; reverse end of print retraction,G1 E10 F50 ; extrude 10mm,,;move out of dock,T0 ; select extruder 0,G1 X80 Y235 F3000 ; move a little in dock,G1 X80 Y200 F3000 ; move out of dock,,M117 Print starting,,;BigBox Hybrid-Dual Start Script End</startingGcode>
       <toolChangeGcode/>
-      <endingGcode>;BigBox Hybrid-Dual End Script Begin,;relies on M83 (use relative extrusion distances),,; lift the head,G91 ; relative positioning,G1 Z5 F360 ; move Z axis by 5mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y235 F3000 ; move into dock,,;purge extruder 1,T1 ; select extruder 1,G1 F400,G1 E25 F400 ; extrude 25mm,G1 E-14  F4000 ; retract 14mm very fast,,G91 ; relative positioning,G1 Z-5 F360 ; move Z axis by -5mm to be safe for 4mm homing Z raise,G90 ; absolute positioning,,T0 ; select extruder 0,M104 S0 ; turn off extruder 0,T1 ; select extruder 1,M104 S0 ; turn off extruder 1,M140 S0 ; turn off bed,M84 ; disable steppers,M106 S0 ; disable cooling fans,T0 ; select extruder 0,,M117 Print complete,,;BigBox Hybrid-Dual End Script End</endingGcode>
+      <endingGcode>;BigBox Hybrid-Dual End Script Begin,;relies on M83 (use relative extrusion distances),,; lift the head,G91 ; relative positioning,G1 Z5 F360 ; move Z axis by 5mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y235 F3000 ; move into dock,,;purge extruder 1,T1 ; select extruder 1,G1 F400,G1 E25 F400 ; extrude 25mm,G1 E-14  F4000 ; retract 14mm very fast,,G91 ; relative positioning,G1 Z-5 F360 ; move Z axis by -5mm to be safe for 4mm homing Z raise,G90 ; absolute positioning,,M104 S0 T0; turn off extruder 0,M104 S0 T1; turn off extruder 1,M140 S0 ; turn off bed,M84 ; disable steppers,M106 S0 ; disable cooling fans,T0 ; select extruder 0,,M117 Print complete,,;BigBox Hybrid-Dual End Script End</endingGcode>
       <strokeXoverride>300</strokeXoverride>
       <strokeYoverride>200</strokeYoverride>
       <strokeZoverride>300</strokeZoverride>
@@ -1329,9 +1327,9 @@
       <useOozeShield>0</useOozeShield>
       <toggleTemperatureController name="Extruder 0 (left)" status="on" stabilize="on"/>
       <toggleTemperatureController name="Extruder 1 (right)" status="on" stabilize="on"/>
-      <startingGcode>;BigBox Hybrid-Dual Start Script Begin,;relies on M83 (use relative extrusion distances),,M117 Preparing,M190 S60 ; wait for bed to reach 60C,M140 S[bed0_temperature] ; set bed temperature,T0 ; select extruder 0,M104 S[extruder0_temperature] ; set extruder 0 temperature,T1 ; select extruder 1,M104 S[extruder1_temperature] ; set extruder 1 temperature,,;home,T0 ; select extruder 0,G28,,;set values,;M92 E417.5 ; adjust steps per mm for your filament,M218 T1 X38 Y0 ; set extruder 1 offset,,; lift the head,G91 ; relative positioning,G1 Z5 F360 ; move Z axis by 5mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y235 F3000 ; move into dock,,;heat bed,M190 S[bed0_temperature] ; wait for bed temperature,,;heat extruder 0,T0 ; select extruder 0,M109 S[extruder0_temperature] ; set extruder 0 temperature and wait,,;heat extruder 1,T1 ; select extruder 1,M109 S[extruder1_temperature] ; set extruder 1 temperature and wait,,;move out of dock,T0 ; select extruder 0,G1 X80 Y235 F3000 ; move a little in dock,G1 X80 Y200 F3000 ; move out of dock,,M117 Print starting,,;BigBox Hybrid-Dual Start Script End</startingGcode>
+      <startingGcode>;BigBox Hybrid-Dual Start Script Begin,;relies on M83 (use relative extrusion distances),,;home,T0 ; select extruder 0,G28,,M117 Preparing,M190 S50 ; wait for bed to reach 50C,M140 S[bed0_temperature] ; set bed temperature,M104 S[extruder0_temperature] T0; set extruder 0 temperature,M104 S[extruder1_temperature] T1; set extruder 1 temperature,,;set values,;M92 E417.5 ; adjust steps per mm for your filament,M218 T1 X38 Y0 ; set extruder 1 offset,,; lift the head,G91 ; relative positioning,G1 Z5 F360 ; move Z axis by 5mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y235 F3000 ; move into dock,,;heat bed,M190 S[bed0_temperature] ; wait for bed temperature,,;heat extruder 0,T0 ; select extruder 0,M109 S[extruder0_temperature] ; set extruder 0 temperature and wait,,;heat extruder 1,T1 ; select extruder 1,M109 S[extruder1_temperature] ; set extruder 1 temperature and wait,,;move out of dock,T0 ; select extruder 0,G1 X80 Y235 F3000 ; move a little in dock,G1 X80 Y200 F3000 ; move out of dock,,M117 Print starting,,;BigBox Hybrid-Dual Start Script End</startingGcode>
       <toolChangeGcode/>
-      <endingGcode>;BigBox Hybrid-Dual End Script Begin,;relies on M83 (use relative extrusion distances),,; lift the head,G91 ; relative positioning,G1 Z5 F360 ; move Z axis by 5mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y235 F3000 ; move into dock,,;purge extruder 0,T0 ; select extruder 0,G1 F400,G1 E25 F400 ; extrude 25mm,G1 E-14  F4000 ; retract 14mm very fast,,;purge extruder 1,T1 ; select extruder 1,G1 F400,G1 E25 F400 ; extrude 25mm,G1 E-14  F4000 ; retract 14mm very fast,,G91 ; relative positioning,G1 Z-5 F360 ; move Z axis by -5mm to be safe for 4mm homing Z raise,G90 ; absolute positioning,,T0 ; select extruder 0,M104 S0 ; turn off extruder 0,T1 ; select extruder 1,M104 S0 ; turn off extruder 1,M140 S0 ; turn off bed,M84 ; disable steppers,M106 S0 ; disable cooling fans,T0 ; select extruder 0,,M117 Print complete,,;BigBox Hybrid-Dual End Script End</endingGcode>
+      <endingGcode>;BigBox Hybrid-Dual End Script Begin,;relies on M83 (use relative extrusion distances),,; lift the head,G91 ; relative positioning,G1 Z5 F360 ; move Z axis by 5mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y235 F3000 ; move into dock,,;purge extruder 0,T0 ; select extruder 0,G1 F400,G1 E25 F400 ; extrude 25mm,G1 E-14  F4000 ; retract 14mm very fast,,;purge extruder 1,T1 ; select extruder 1,G1 F400,G1 E25 F400 ; extrude 25mm,G1 E-14  F4000 ; retract 14mm very fast,,G91 ; relative positioning,G1 Z-5 F360 ; move Z axis by -5mm to be safe for 4mm homing Z raise,G90 ; absolute positioning,,M104 S0 T0; turn off extruder 0,M104 S0 T1; turn off extruder 1,M140 S0 ; turn off bed,M84 ; disable steppers,M106 S0 ; disable cooling fans,T0 ; select extruder 0,,M117 Print complete,,;BigBox Hybrid-Dual End Script End</endingGcode>
       <strokeXoverride>300</strokeXoverride>
       <strokeYoverride>200</strokeYoverride>
       <strokeZoverride>300</strokeZoverride>
@@ -1347,9 +1345,9 @@
       <useOozeShield>0</useOozeShield>
       <toggleTemperatureController name="Extruder 0 (left)" status="on" stabilize="on"/>
       <toggleTemperatureController name="Extruder 1 (right)" status="on" stabilize="on"/>
-      <startingGcode>;BigBox Hybrid-Dual Start Script Begin,;relies on M83 (use relative extrusion distances),,M117 Preparing,M190 S60 ; wait for bed to reach 60C,M140 S[bed0_temperature] ; set bed temperature,T0 ; select extruder 0,M104 S[extruder0_temperature] ; set extruder 0 temperature,T1 ; select extruder 1,M104 S[extruder1_temperature] ; set extruder 1 temperature,,;home,T0 ; select extruder 0,G28,,;set values,;M92 E417.5 ; adjust steps per mm for your filament,M218 T1 X38 Y0 ; set extruder 1 offset,,; lift the head,G91 ; relative positioning,G1 Z5 F360 ; move Z axis by 5mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y235 F3000 ; move into dock,,;heat bed,M190 S[bed0_temperature] ; wait for bed temperature,,;heat extruder 0,T0 ; select extruder 0,M109 S[extruder0_temperature] ; set extruder 0 temperature and wait,,;heat extruder 1,T1 ; select extruder 1,M109 S[extruder1_temperature] ; set extruder 1 temperature and wait,,;move out of dock,T0 ; select extruder 0,G1 X80 Y235 F3000 ; move a little in dock,G1 X80 Y200 F3000 ; move out of dock,,M117 Print starting,,;BigBox Hybrid-Dual Start Script End</startingGcode>
+      <startingGcode>;BigBox Hybrid-Dual Start Script Begin,;relies on M83 (use relative extrusion distances),,;home,T0 ; select extruder 0,G28,,M117 Preparing,M190 S50 ; wait for bed to reach 50C,M140 S[bed0_temperature] ; set bed temperature,M104 S[extruder0_temperature] T0; set extruder 0 temperature,M104 S[extruder1_temperature] T1; set extruder 1 temperature,,;set values,;M92 E417.5 ; adjust steps per mm for your filament,M218 T1 X38 Y0 ; set extruder 1 offset,,; lift the head,G91 ; relative positioning,G1 Z5 F360 ; move Z axis by 5mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y235 F3000 ; move into dock,,;heat bed,M190 S[bed0_temperature] ; wait for bed temperature,,;heat extruder 0,T0 ; select extruder 0,M109 S[extruder0_temperature] ; set extruder 0 temperature and wait,,;heat extruder 1,T1 ; select extruder 1,M109 S[extruder1_temperature] ; set extruder 1 temperature and wait,,;move out of dock,T0 ; select extruder 0,G1 X80 Y235 F3000 ; move a little in dock,G1 X80 Y200 F3000 ; move out of dock,,M117 Print starting,,;BigBox Hybrid-Dual Start Script End</startingGcode>
       <toolChangeGcode>;BigBox Hybrid-Dual Oozeless Tool Change Script Begin,;relies on M83 (use relative extrusion distances),,; lift the head,G91 ; relative positioning,G1 Z5 F360 ; move Z axis by 5mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y235 F3000 ; move into dock,,;purge old extruder,{IF OLDTOOL=0}T0,{IF OLDTOOL=0}G1 F400,{IF OLDTOOL=0}G1 E25 F400,{IF OLDTOOL=0}G1 E-14  F4000,{IF OLDTOOL=1}T1,{IF OLDTOOL=1}G1 F400,{IF OLDTOOL=1}G1 E25 F400,{IF OLDTOOL=1}G1 E-14  F4000,,;extruder steps per mm,;uncomment if you want to use and set values,;{IF NEWTOOL=0}M92 E417.5 ; steps per mm extruder 0,;{IF NEWTOOL=1}M92 E417.5 ; steps per mm extruder 1,;{IF NEWTOOL=0}M301 P1 I2 D3 ; PID parameters extruder 0,;{IF NEWTOOL=1}M301 P1 I2 D3 ; PID parameters extruder 1,,;prime new extruder,{IF NEWTOOL=0}T0,{IF NEWTOOL=1}T1,G1 F200,G1 E15 F200,G1 E5 F50,G1 E-1.5 F3000,,;move out of dock,T0 ; select extruder 0,G1 X80 Y235 F3000 ; move a little in dock,G1 X80 Y200 F3000 ; move out of dock,,;BigBox Hybrid-Dual Oozeless Tool Change Script End,,</toolChangeGcode>
-      <endingGcode>;BigBox Hybrid-Dual End Script Begin,;relies on M83 (use relative extrusion distances),,; lift the head,G91 ; relative positioning,G1 Z5 F360 ; move Z axis by 5mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y235 F3000 ; move into dock,,;purge extruder 0,T0 ; select extruder 0,G1 F400,G1 E25 F400 ; extrude 25mm,G1 E-14  F4000 ; retract 14mm very fast,,;purge extruder 1,T1 ; select extruder 1,G1 F400,G1 E25 F400 ; extrude 25mm,G1 E-14  F4000 ; retract 14mm very fast,,G91 ; relative positioning,G1 Z-5 F360 ; move Z axis by -5mm to be safe for 4mm homing Z raise,G90 ; absolute positioning,,T0 ; select extruder 0,M104 S0 ; turn off extruder 0,T1 ; select extruder 1,M104 S0 ; turn off extruder 1,M140 S0 ; turn off bed,M84 ; disable steppers,M106 S0 ; disable cooling fans,T0 ; select extruder 0,,M117 Print complete,,;BigBox Hybrid-Dual End Script End</endingGcode>
+      <endingGcode>;BigBox Hybrid-Dual End Script Begin,;relies on M83 (use relative extrusion distances),,; lift the head,G91 ; relative positioning,G1 Z5 F360 ; move Z axis by 5mm,G90 ; absolute positioning,,;move to dock,T0 ; select extruder 0,G1 X70 Y200 F3000 ; move to position in front of dock,G1 X70 Y235 F3000 ; move into dock,,;purge extruder 0,T0 ; select extruder 0,G1 F400,G1 E25 F400 ; extrude 25mm,G1 E-14  F4000 ; retract 14mm very fast,,;purge extruder 1,T1 ; select extruder 1,G1 F400,G1 E25 F400 ; extrude 25mm,G1 E-14  F4000 ; retract 14mm very fast,,G91 ; relative positioning,G1 Z-5 F360 ; move Z axis by -5mm to be safe for 4mm homing Z raise,G90 ; absolute positioning,,M104 S0 T0; turn off extruder 0,M104 S0 T1; turn off extruder 1,M140 S0 ; turn off bed,M84 ; disable steppers,M106 S0 ; disable cooling fans,T0 ; select extruder 0,,M117 Print complete,,;BigBox Hybrid-Dual End Script End</endingGcode>
       <strokeXoverride>300</strokeXoverride>
       <strokeYoverride>200</strokeYoverride>
       <strokeZoverride>300</strokeZoverride>
